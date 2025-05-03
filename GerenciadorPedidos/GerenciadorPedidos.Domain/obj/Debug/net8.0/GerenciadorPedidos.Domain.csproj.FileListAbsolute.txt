@@ -1,0 +1,12 @@
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\bin\Debug\net8.0\GerenciadorPedidos.Domain.deps.json
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\bin\Debug\net8.0\GerenciadorPedidos.Domain.dll
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\bin\Debug\net8.0\GerenciadorPedidos.Domain.pdb
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.csproj.AssemblyReference.cache
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.AssemblyInfoInputs.cache
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.AssemblyInfo.cs
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.dll
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\refint\GerenciadorPedidos.Domain.dll
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.pdb
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\ref\GerenciadorPedidos.Domain.dll

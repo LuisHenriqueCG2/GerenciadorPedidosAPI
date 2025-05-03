@@ -1,0 +1,17 @@
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.deps.json
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.runtimeconfig.json
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.dll
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.pdb
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Domain.dll
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Domain.pdb
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.csproj.AssemblyReference.cache
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.AssemblyInfoInputs.cache
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.AssemblyInfo.cs
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.csproj.CoreCompileInputs.cache
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\Gerencia.8CB041DC.Up2Date
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.dll
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\refint\GerenciadorPedidos.Infra.Data.dll
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.pdb
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.genruntimeconfig.cache
+D:\Projetos\New\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\ref\GerenciadorPedidos.Infra.Data.dll

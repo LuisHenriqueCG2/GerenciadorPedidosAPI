@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "vVXvh8pkIeyH3ENE6HsnpgUwLFeuwjeWDSo2/nW3eEY=",
+  "Source": "GerenciadorPedidos.API",
+  "BasePath": "_content/GerenciadorPedidos.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
