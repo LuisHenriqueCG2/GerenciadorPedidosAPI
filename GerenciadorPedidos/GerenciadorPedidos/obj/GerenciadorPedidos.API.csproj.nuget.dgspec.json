@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj": {}
+    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj": {
+    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
         "projectName": "GerenciadorPedidos.Application",
-        "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
+        "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\obj\\",
+        "outputPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
-                "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj"
+              "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
+    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
         "projectName": "GerenciadorPedidos.Domain",
-        "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
+        "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -158,14 +158,14 @@
         }
       }
     },
-    "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj": {
+    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj",
         "projectName": "GerenciadorPedidos.Infra.Data",
-        "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj",
+        "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\obj\\",
+        "outputPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -186,8 +186,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
-                "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj"
+              "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj"
               }
             }
           }
@@ -245,14 +245,14 @@
         }
       }
     },
-    "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\GerenciadorPedidos.Infra.Ioc.csproj": {
+    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\GerenciadorPedidos.Infra.Ioc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\GerenciadorPedidos.Infra.Ioc.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\GerenciadorPedidos.Infra.Ioc.csproj",
         "projectName": "GerenciadorPedidos.Infra.Ioc",
-        "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\GerenciadorPedidos.Infra.Ioc.csproj",
+        "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\GerenciadorPedidos.Infra.Ioc.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\obj\\",
+        "outputPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -273,14 +273,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj": {
-                "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj"
+              "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj"
               },
-              "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
-                "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj"
+              "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj"
               },
-              "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj": {
-                "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj"
+              "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj"
               }
             }
           }
@@ -342,14 +342,14 @@
         }
       }
     },
-    "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj": {
+    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj",
         "projectName": "GerenciadorPedidos.API",
-        "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj",
+        "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\obj\\",
+        "outputPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -370,8 +370,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\GerenciadorPedidos.Infra.Ioc.csproj": {
-                "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\GerenciadorPedidos.Infra.Ioc.csproj"
+              "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\GerenciadorPedidos.Infra.Ioc.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\GerenciadorPedidos.Infra.Ioc.csproj"
               }
             }
           }
@@ -395,6 +395,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[8.1.1, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",

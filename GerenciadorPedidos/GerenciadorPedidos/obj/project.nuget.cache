@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eKakpvXnTwc=",
+  "dgSpecHash": "jtgD315dF0s=",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj",
+  "projectFilePath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
@@ -53,6 +53,7 @@
     "C:\\Users\\Usuário\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
+    "C:\\Users\\Usuário\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\8.1.1\\swashbuckle.aspnetcore.annotations.8.1.1.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\8.1.1\\swashbuckle.aspnetcore.swagger.8.1.1.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\8.1.1\\swashbuckle.aspnetcore.swaggergen.8.1.1.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\8.1.1\\swashbuckle.aspnetcore.swaggerui.8.1.1.nupkg.sha512",

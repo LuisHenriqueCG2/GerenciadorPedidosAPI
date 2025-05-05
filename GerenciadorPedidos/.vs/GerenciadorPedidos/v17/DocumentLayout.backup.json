@@ -1,73 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projetos\\New\\GerenciadorPedidos\\",
+  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|c:\\users\\usu\u00E1rio\\documents\\apigerenciadorpedidos\\gerenciadorpedidos\\gerenciadorpedidos\\gerenciadorpedidos\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|solutionrelative:gerenciadorpedidos\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|solutionrelative:gerenciadorpedidos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|c:\\users\\usu\u00E1rio\\documents\\apigerenciadorpedidos\\gerenciadorpedidos\\gerenciadorpedidos\\gerenciadorpedidos.infra.data\\entitiesconfiguration\\itempedidoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|solutionrelative:gerenciadorpedidos.infra.data\\entitiesconfiguration\\itempedidoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.application\\gerenciadorpedidos.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|solutionrelative:gerenciadorpedidos.application\\gerenciadorpedidos.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.application\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|solutionrelative:gerenciadorpedidos.application\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.infra.data\\repositories\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|solutionrelative:gerenciadorpedidos.infra.data\\repositories\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED4B2CC-87B7-42CB-80F5-81A6C74D434C}|GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.domain\\interfaces\\ipedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED4B2CC-87B7-42CB-80F5-81A6C74D434C}|GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj|solutionrelative:gerenciadorpedidos.domain\\interfaces\\ipedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.application\\interfaces\\ipedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|solutionrelative:gerenciadorpedidos.application\\interfaces\\ipedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.infra.data\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|solutionrelative:gerenciadorpedidos.infra.data\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED4B2CC-87B7-42CB-80F5-81A6C74D434C}|GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.domain\\entities\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED4B2CC-87B7-42CB-80F5-81A6C74D434C}|GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj|solutionrelative:gerenciadorpedidos.domain\\entities\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DED4B2CC-87B7-42CB-80F5-81A6C74D434C}|GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.domain\\entities\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DED4B2CC-87B7-42CB-80F5-81A6C74D434C}|GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj|solutionrelative:gerenciadorpedidos.domain\\entities\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.infra.data\\entitiesconfiguration\\pedidoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|solutionrelative:gerenciadorpedidos.infra.data\\entitiesconfiguration\\pedidoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.infra.data\\migrations\\20250503210339_inicialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|solutionrelative:gerenciadorpedidos.infra.data\\migrations\\20250503210339_inicialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|solutionrelative:gerenciadorpedidos\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|c:\\users\\usu\u00E1rio\\documents\\apigerenciadorpedidos\\gerenciadorpedidos\\gerenciadorpedidos\\gerenciadorpedidos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|solutionrelative:gerenciadorpedidos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.infra.data\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|solutionrelative:gerenciadorpedidos.infra.data\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|d:\\projetos\\new\\gerenciadorpedidos\\gerenciadorpedidos.infra.data\\gerenciadorpedidos.infra.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|solutionrelative:gerenciadorpedidos.infra.data\\gerenciadorpedidos.infra.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -77,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -85,207 +30,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GerenciadorPedidos.Application.csproj",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
-              "RelativeToolTip": "GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-03T21:46:57.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IPedidoService.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Interfaces\\IPedidoService.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Application\\Interfaces\\IPedidoService.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Interfaces\\IPedidoService.cs",
-              "RelativeToolTip": "GerenciadorPedidos.Application\\Interfaces\\IPedidoService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T21:26:58.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PedidoConfiguration.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\EntitiesConfiguration\\PedidoConfiguration.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Data\\EntitiesConfiguration\\PedidoConfiguration.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\EntitiesConfiguration\\PedidoConfiguration.cs",
-              "RelativeToolTip": "GerenciadorPedidos.Infra.Data\\EntitiesConfiguration\\PedidoConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T21:17:29.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PedidoService.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Services\\PedidoService.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Application\\Services\\PedidoService.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Services\\PedidoService.cs",
-              "RelativeToolTip": "GerenciadorPedidos.Application\\Services\\PedidoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T21:11:49.363Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PedidosController.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\Controllers\\PedidosController.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\Controllers\\PedidosController.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos\\Controllers\\PedidosController.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\Controllers\\PedidosController.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\Controllers\\PedidosController.cs",
               "RelativeToolTip": "GerenciadorPedidos\\Controllers\\PedidosController.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwA8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T21:11:43.42Z",
+              "WhenOpened": "2025-05-05T21:26:03.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\Program.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos\\Program.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\Program.cs",
-              "RelativeToolTip": "GerenciadorPedidos\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
+              "Title": "ItemPedidoConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\EntitiesConfiguration\\ItemPedidoConfiguration.cs",
+              "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Data\\EntitiesConfiguration\\ItemPedidoConfiguration.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\EntitiesConfiguration\\ItemPedidoConfiguration.cs",
+              "RelativeToolTip": "GerenciadorPedidos.Infra.Data\\EntitiesConfiguration\\ItemPedidoConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T21:02:51.149Z",
+              "WhenOpened": "2025-05-05T21:23:29.885Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IPedidoRepository.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\Interfaces\\IPedidoRepository.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Domain\\Interfaces\\IPedidoRepository.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\Interfaces\\IPedidoRepository.cs",
-              "RelativeToolTip": "GerenciadorPedidos.Domain\\Interfaces\\IPedidoRepository.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T21:37:27.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProdutoRepository.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\Repositories\\ProdutoRepository.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Data\\Repositories\\ProdutoRepository.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\Repositories\\ProdutoRepository.cs",
-              "RelativeToolTip": "GerenciadorPedidos.Infra.Data\\Repositories\\ProdutoRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwC4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T20:58:21.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\appsettings.json",
               "RelativeDocumentMoniker": "GerenciadorPedidos\\appsettings.json",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\appsettings.json",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\appsettings.json",
               "RelativeToolTip": "GerenciadorPedidos\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-03T21:02:44.078Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PedidoRepository.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\Repositories\\PedidoRepository.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Data\\Repositories\\PedidoRepository.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\Repositories\\PedidoRepository.cs",
-              "RelativeToolTip": "GerenciadorPedidos.Infra.Data\\Repositories\\PedidoRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwCMAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T21:01:42.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Pedido.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\Entities\\Pedido.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Domain\\Entities\\Pedido.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\Entities\\Pedido.cs",
-              "RelativeToolTip": "GerenciadorPedidos.Domain\\Entities\\Pedido.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAywCMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T22:21:27.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ItemPedido.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\Entities\\ItemPedido.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Domain\\Entities\\ItemPedido.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\Entities\\ItemPedido.cs",
-              "RelativeToolTip": "GerenciadorPedidos.Domain\\Entities\\ItemPedido.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T14:33:24.779Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20250503210339_InicialMigration.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\Migrations\\20250503210339_InicialMigration.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Data\\Migrations\\20250503210339_InicialMigration.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\Migrations\\20250503210339_InicialMigration.cs",
-              "RelativeToolTip": "GerenciadorPedidos.Infra.Data\\Migrations\\20250503210339_InicialMigration.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T21:03:39.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos\\Controllers\\ProdutoController.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "GerenciadorPedidos\\Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAkwB8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T20:58:21.928Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\Context\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Data\\Context\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\Context\\ApplicationDbContext.cs",
-              "RelativeToolTip": "GerenciadorPedidos.Infra.Data\\Context\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T21:01:35.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GerenciadorPedidos.Infra.Data.csproj",
-              "DocumentMoniker": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj",
-              "ToolTip": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj",
-              "RelativeToolTip": "GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-03T20:57:08.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAEsHAAAAAAAAAAArwGAHAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-05-03T20:54:56.751Z"
+              "WhenOpened": "2025-05-05T21:11:40.456Z",
+              "EditorCaption": ""
             }
           ]
         }

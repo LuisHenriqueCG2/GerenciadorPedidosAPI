@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VXBgB6cqNdI=",
+  "dgSpecHash": "/k8VKdq58u8=",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
+  "projectFilePath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.4\\microsoft.entityframeworkcore.9.0.4.nupkg.sha512",

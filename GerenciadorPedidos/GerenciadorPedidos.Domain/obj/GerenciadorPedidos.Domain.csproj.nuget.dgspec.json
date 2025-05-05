@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {}
+    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
+    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
         "projectName": "GerenciadorPedidos.Domain",
-        "projectPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
+        "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

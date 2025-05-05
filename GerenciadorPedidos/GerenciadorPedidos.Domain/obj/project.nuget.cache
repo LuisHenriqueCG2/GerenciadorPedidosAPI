@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NcfglREGD2Y=",
+  "dgSpecHash": "gytRy2p1ER8=",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.4\\microsoft.entityframeworkcore.9.0.4.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.4\\microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512",

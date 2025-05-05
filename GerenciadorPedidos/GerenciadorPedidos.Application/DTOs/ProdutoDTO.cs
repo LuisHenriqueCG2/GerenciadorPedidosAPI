@@ -13,6 +13,5 @@ namespace GerenciadorPedidos.Application.DTOs
         public DateTime DataCadastro { get; set; }
         public decimal PrecoUnitario { get; set; }
         public int Quantidade { get; set; }
-        public decimal ValorTotal { get; set; }
     }
 }

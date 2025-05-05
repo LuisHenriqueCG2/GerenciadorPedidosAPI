@@ -22,8 +22,7 @@ namespace GerenciadorPedidos.Infra.Data.Context
         {
             base.OnModelCreating(builder);
             builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
-            
-            
+
         }
     }
 }

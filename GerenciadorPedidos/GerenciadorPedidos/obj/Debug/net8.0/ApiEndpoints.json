@@ -2,25 +2,25 @@
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
     "Method": "AdicionarProdutoAoPedido",
-    "RelativePath": "api/v1/AdicionarProduto{pedidoId}/produtos/{produtoId}/{quantidade}",
+    "RelativePath": "api/v1/Pedidos/AdicionarProduto",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "pedidoId",
+        "Name": "PedidoID",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
-        "Name": "produtoId",
+        "Name": "ProdutoID",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
-        "Name": "quantidade",
+        "Name": "Quantidade",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -52,15 +52,15 @@
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
     "Method": "ObterPorId",
-    "RelativePath": "api/v1/ConsultarPedido{id}",
+    "RelativePath": "api/v1/Pedidos/ConsultarPedidoId",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "Id",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -92,7 +92,7 @@
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
     "Method": "AdicionarPedido",
-    "RelativePath": "api/v1/CriarPedido",
+    "RelativePath": "api/v1/Pedidos/CriarPedido",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -132,15 +132,15 @@
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
     "Method": "ExcluirPedido",
-    "RelativePath": "api/v1/ExcluirPedido{id}",
+    "RelativePath": "api/v1/Pedidos/ExcluirPedido",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "PedidoID",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -172,15 +172,15 @@
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
     "Method": "FaturarPedido",
-    "RelativePath": "api/v1/FaturarPedido{pedidoId}",
+    "RelativePath": "api/v1/Pedidos/FaturarPedido",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "pedidoId",
+        "Name": "PedidoID",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -208,15 +208,15 @@
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
     "Method": "FecharPedido",
-    "RelativePath": "api/v1/FecharPedido{pedidoId}",
+    "RelativePath": "api/v1/Pedidos/FecharPedido",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "pedidoId",
+        "Name": "PedidoID",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -248,7 +248,7 @@
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
     "Method": "ListarTodos",
-    "RelativePath": "api/v1/ListarTodos",
+    "RelativePath": "api/v1/Pedidos/ListarTodos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -296,6 +296,51 @@
     ]
   },
   {
+    "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
+    "Method": "RemoverProdutoPedido",
+    "RelativePath": "api/v1/Pedidos/RemoverProduto",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PedidoID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProdutoID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
     "ContainingType": "GerenciadorPedidos.API.Controllers.ProdutoController",
     "Method": "AlterarProduto",
     "RelativePath": "api/v1/Produto/Alterar",
@@ -309,7 +354,31 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.ProdutoController",
@@ -325,7 +394,71 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "GerenciadorPedidos.API.Controllers.ProdutoController",
+    "Method": "ListarPorID",
+    "RelativePath": "api/v1/Produto/ConsultarId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.ProdutoController",
@@ -336,28 +469,36 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "GerenciadorPedidos.API.Controllers.ProdutoController",
-    "Method": "ListarPorID",
-    "RelativePath": "api/v1/Produto/Listar/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+    "ReturnTypes": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
       }
-    ],
-    "ReturnTypes": []
+    ]
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.ProdutoController",
@@ -367,27 +508,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
-    "Method": "RemoverProdutoPedido",
-    "RelativePath": "api/v1/RemoverProduto{pedidoId}/produtos/{produtoId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "pedidoId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "produtoId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
     "ReturnTypes": [
       {
         "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",

@@ -9,12 +9,19 @@ namespace GerenciadorPedidos.Domain.Entities
 {
     public class Produto
     {
-        public int Id { get; private set; }
-        public string Descricao { get; private set; }
-        public int Quantidade { get; private set; }
-        public decimal PrecoUnitario { get; private set; }
-        public DateTime DataCadastro { get; private set; }
-        public ICollection<ItemPedido> ItensPedido { get; private set; }
+        //public int Id { get; private set; }
+        //public string Descricao { get; private set; }
+        //public int Quantidade { get; private set; }
+        //public decimal PrecoUnitario { get; private set; }
+        //public DateTime DataCadastro { get; private set; }
+        //public ICollection<ItemPedido> ItensPedido { get; private set; }
+
+        public int Id { get;  set; }
+        public string Descricao { get;  set; }
+        public int Quantidade { get;  set; }
+        public decimal PrecoUnitario { get;  set; }
+        public DateTime DataCadastro { get;  set; }
+        public ICollection<ItemPedido> ItensPedido { get;  set; }
         public Produto() { }
 
         public Produto(int id, string descricao, int quantidade, decimal precoUnitario, DateTime dataCadastro, ICollection<ItemPedido> itensPedido)
@@ -26,7 +33,6 @@ namespace GerenciadorPedidos.Domain.Entities
             DataCadastro = dataCadastro;
             ItensPedido = itensPedido;
         }
-
 
         public Produto(int id, string descricao, int quantidade, decimal precoUnitario, DateTime dataCadastro)
         {

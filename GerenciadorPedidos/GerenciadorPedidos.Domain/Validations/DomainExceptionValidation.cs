@@ -12,7 +12,6 @@ namespace GerenciadorPedidos.Domain.Validations
         {
 
         }
-
         public static void When(bool hasError, string error)
         {
             if (hasError)

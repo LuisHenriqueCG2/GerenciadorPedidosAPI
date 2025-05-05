@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorPedidos.Applicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorPedidos.API", "GerenciadorPedidos\GerenciadorPedidos.API.csproj", "{0FB8277C-D78C-49A5-87AB-8947CD125B81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorPedidos.Tests", "GerenciadorPedidos.Tests\GerenciadorPedidos.Tests.csproj", "{6EAAB2BF-1D42-40D2-85A9-8952AE85F0D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0FB8277C-D78C-49A5-87AB-8947CD125B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FB8277C-D78C-49A5-87AB-8947CD125B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FB8277C-D78C-49A5-87AB-8947CD125B81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EAAB2BF-1D42-40D2-85A9-8952AE85F0D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EAAB2BF-1D42-40D2-85A9-8952AE85F0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EAAB2BF-1D42-40D2-85A9-8952AE85F0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EAAB2BF-1D42-40D2-85A9-8952AE85F0D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

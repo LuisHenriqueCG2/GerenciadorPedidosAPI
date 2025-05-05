@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k+66z55SSww=",
+  "dgSpecHash": "UrMuB5I36l4=",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\New\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj",
+  "projectFilePath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

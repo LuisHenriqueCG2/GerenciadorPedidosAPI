@@ -59,7 +59,6 @@ namespace GerenciadorPedidos.Domain.Entities
             DataFechamento = DateTime.UtcNow;
         }
 
-
         public void CancelarPedido()
         {
             if (StatusPedido == StatusPedido.Fechado)

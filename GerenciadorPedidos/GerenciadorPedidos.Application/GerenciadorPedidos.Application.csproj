@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Compile Remove="DTOs\PedidoCreateDTO.cs" />
+    <Compile Remove="DTOs\RemoverProdutoResponseDTO.cs" />
   </ItemGroup>
 
   <ItemGroup>

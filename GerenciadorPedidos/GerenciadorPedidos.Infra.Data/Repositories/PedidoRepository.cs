@@ -19,7 +19,6 @@ namespace GerenciadorPedidos.Infra.Data.Repositories
         {
             _context = context;
         }
-
         public async Task AdicionarPedido(Pedido pedido)
         {
             pedido.DataFaturamento = null;

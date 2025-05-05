@@ -30,6 +30,7 @@ builder.Services.AddSwaggerGen(c => {
             Url = new Uri("https://example.com/license")
         }
     });
+    c.EnableAnnotations();
 });
 
 var app = builder.Build();
