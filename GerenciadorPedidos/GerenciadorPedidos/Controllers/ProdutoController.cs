@@ -1,7 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using GerenciadorPedidos.Application.DTOs;
 using GerenciadorPedidos.Application.Interfaces;
+using GerenciadorPedidos.Application.Produtos.Commands;
+using GerenciadorPedidos.Application.Produtos.Queries;
 using GerenciadorPedidos.Domain.Entities;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -9,93 +12,50 @@ namespace GerenciadorPedidos.API.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
-    public class ProdutoController : Controller
+    public class ProdutoController(IProdutoService produtoService, ISender sender) : ControllerBase
     {
         private readonly IProdutoService _produtoService;
 
-        public ProdutoController(IProdutoService produtoService)
-        {
-            _produtoService = produtoService;
-        }
-
         [HttpPost("Cadastrar")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
         [SwaggerOperation(
             Summary = "Cadastra um novo produto",
             Description = "Recebe os dados do produto e retorna o produto criado com seu ID.")]
-        public async Task<ActionResult> AdicionarProduto([FromBody] ProdutoDTO produtoDTO)
+        public async Task<ActionResult> PostTaskAsync([FromBody] PostProdutoCommand query)
         {
-            var produtoDTOIncluido = await _produtoService.AdicionarProduto(produtoDTO);
-            if (produtoDTOIncluido == null)
-            {
-                return BadRequest("Ocorreu um erro ao incluir o produto!");
-            }
-            return Ok(produtoDTOIncluido);
+            var resultado = await sender.Send(query); 
+            return Ok(resultado);
         }
-
+        
         [HttpPut("Alterar")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
         [SwaggerOperation(Summary = "Altera um produto existente")]
-        public async Task<ActionResult> AlterarProduto([FromBody] ProdutoDTO produtoDTO)
+        public async Task<ActionResult> PutTaskAsync([FromBody] PutProdutoCommand query)
         {
-            var produtoDTOAlterado = await _produtoService.AlterarProduto(produtoDTO);
-            if (produtoDTOAlterado == null)
-            {
-                return BadRequest("Ocorreu um erro ao alterar o produto!");
-            }
-            return Ok("Produto alterado com sucesso!");
+            var result = await sender.Send(query);
+            return Ok(result);
         }
 
         [HttpDelete("Deletar")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
         [SwaggerOperation(Summary = "Remove um produto pelo ID")]
-        public async Task<ActionResult> ExcluirProduto(
-            [SwaggerParameter(Required = true)]
-            [FromQuery] int Id)
+        public async Task<ActionResult> DeleteTaskAsync([FromQuery] DeleteProdutoCommand command)
         {
-
-            var produtoDTOexcluido = await _produtoService.ExcluirProduto(Id);
-            if (produtoDTOexcluido == null)
-            {
-                return BadRequest("Ocorreu um erro ao excluir o produto!");
-            }
-            return Ok("Produto excluído com sucesso!");
+            await sender.Send(command);
+            return Ok(new { message = "Produto deletado com sucesso!"});
         }
-        
+
         [HttpGet("ConsultarId")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
         [SwaggerOperation(Summary = "Obtém um produto pelo ID")]
-        public async Task<ActionResult> ListarPorID(
-            [SwaggerParameter(Required = true)]
-            [FromQuery, Required] int Id)
+        public async Task<ActionResult> GetIdTaskAsync(
+            [FromQuery] GetProdutoIdQuery query)
         {
-            var produtoDTO = await _produtoService.ListarPorId(Id);
-            if (produtoDTO == null)
-            {
-                return NotFound("Produto não encontrado!");
-            }
+            return Ok(await sender.Send(query));
+        }
 
-            return Ok(produtoDTO);
-        }
-        
         [HttpGet("ListarTodos")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
         [SwaggerOperation(Summary = "Obtém uma lista dos produtos cadastrados")]
-        public async Task<ActionResult> ListarTodos()
+        public async Task<ActionResult> GetTaskAsync([FromQuery] GetProdutoQuery query)
         {
-            var produtosDTO = await _produtoService.ListarTodosAsync();
-            
-            return Ok(produtosDTO);
+            return Ok(await sender.Send(query));
         }
+
     }
 }

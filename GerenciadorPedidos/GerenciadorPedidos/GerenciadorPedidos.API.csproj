@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GerenciadorPedidos.Infra.Ioc\GerenciadorPedidos.Infra.Ioc.csproj" />
+    <ProjectReference Include="..\GerenciadorPedidos.Infra.Mediatr\GerenciadorPedidos.Infra.Mediatr.csproj" />
   </ItemGroup>
 
 </Project>

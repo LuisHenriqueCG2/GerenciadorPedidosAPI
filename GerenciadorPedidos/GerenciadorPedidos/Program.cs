@@ -1,14 +1,15 @@
 using System.Globalization;
 using GerenciadorPedidos.Infra.Ioc;
+using GerenciadorPedidos.Infra.Mediatr;
 using Microsoft.OpenApi.Models;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Acessa a configuração diretamente do builder fazendo a injeção de dependência para registrar os serviços;
+// Acessa a configuraï¿½ï¿½o diretamente do builder fazendo a injeï¿½ï¿½o de dependï¿½ncia para registrar os serviï¿½os;
 builder.Services.AddInfrastructure(builder.Configuration);
 
-// Adiciona os serviços ao container.
+// Adiciona os serviï¿½os ao container.
+builder.Services.AddMediatrServices();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddInfrastructureSwagger();
@@ -18,16 +19,16 @@ builder.Services.AddSwaggerGen(c => {
         Version = "v1",
         Title = "API para Gerenciamento de Pedidos de uma Loja",
         Description = "Um projeto desenvolvido em ASP.NET Core",
-        TermsOfService = new Uri("https://example.com/terms"),
+        TermsOfService = new Uri("https://insidesistemas.com.br"),
         Contact = new OpenApiContact
         {
             Name = "Example Contact",
-            Url = new Uri("https://example.com/contact")
+            Url = new Uri("https://insidesistemas.com.br")
         },
         License = new OpenApiLicense
         {
             Name = "Example License",
-            Url = new Uri("https://example.com/license")
+            Url = new Uri("https://insidesistemas.com.br")
         }
     });
     c.EnableAnnotations();

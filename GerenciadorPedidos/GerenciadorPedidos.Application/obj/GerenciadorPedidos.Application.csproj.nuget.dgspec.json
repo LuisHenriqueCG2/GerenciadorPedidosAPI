@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj": {}
+    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj": {
+    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
         "projectName": "GerenciadorPedidos.Application",
-        "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
+        "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\obj\\",
+        "outputPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
-                "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj"
+              "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj"
               }
             }
           }
@@ -57,6 +57,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[14.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[8.1.1, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
@@ -83,14 +91,14 @@
         }
       }
     },
-    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
+    "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
         "projectName": "GerenciadorPedidos.Domain",
-        "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
+        "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GerenciadorPedidos.Domain.Entities;
+using GerenciadorPedidos.Domain.Enums;
 
 namespace GerenciadorPedidos.Domain.Interfaces
 {
@@ -13,7 +14,7 @@ namespace GerenciadorPedidos.Domain.Interfaces
         Task<Produto> AlterarProduto(Produto produto);
         Task<Produto> ExcluirProduto(int id);
         Task<Produto> ListarProdutoPorID(int id);
-        Task<IEnumerable<Produto>> ListarTodos();
+        Task<IEnumerable<Produto>> ListarTodos(int pageNumber, int pageSize);
 
         Task<bool> SaveAllAsync();
     }

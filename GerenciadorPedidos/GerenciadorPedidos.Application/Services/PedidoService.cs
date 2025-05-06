@@ -9,6 +9,8 @@ using GerenciadorPedidos.Application.Interfaces;
 using GerenciadorPedidos.Domain.Entities;
 using GerenciadorPedidos.Domain.Enums;
 using GerenciadorPedidos.Domain.Interfaces;
+using GerenciadorPedidos.Domain.Validations;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 namespace GerenciadorPedidos.Application.Services
@@ -26,9 +28,9 @@ namespace GerenciadorPedidos.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<Pedido> AdicionarPedido(string descricaoPedido)
+        public async Task<PedidoDTO> AdicionarPedido(string descricaoPedido)
         {
-            var pedido = new Pedido
+            var novoPedido = new Pedido
             {
                 DescricaoPedido = descricaoPedido,
                 StatusPedido = StatusPedido.Aberto,
@@ -38,21 +40,22 @@ namespace GerenciadorPedidos.Application.Services
                 DataFaturamento = null,
             };
 
-            await _repository.AdicionarPedido(pedido);
+            await _repository.AdicionarPedido(novoPedido);
 
-            return pedido;
+            return _mapper.Map<PedidoDTO>(novoPedido);;
         }
 
 
         public async Task<PedidoDTO> AdicionarProdutoAoPedido(int pedidoId, int produtoId, int quantidade)
         {
             var pedido = await _repository.ListarPedidoPorID(pedidoId);
-            if (pedido == null) throw new Exception("Pedido não encontrado");
+            if (pedido == null) throw new NotFoundException("Pedido não encontrado");
 
             var produto = await _produtoRepository.ListarProdutoPorID(produtoId);
-            if (produto == null) throw new Exception("Produto não encontrado");
+            if (produto == null) throw new NotFoundException("Produto não encontrado");
 
-            pedido.AdicionarProduto(produto, quantidade); 
+            pedido.AdicionarProduto(produto, quantidade);
+
             await _repository.AlterarPedido(pedidoId, pedido);
 
             var pedidoDTO = new PedidoDTO
@@ -60,7 +63,45 @@ namespace GerenciadorPedidos.Application.Services
                 Id = pedido.Id,
                 DescricaoPedido = pedido.DescricaoPedido,
                 StatusPedido = pedido.StatusPedido,
-                DataAbertura = pedido.DataAbertura
+                DataAbertura = pedido.DataAbertura,
+                Produtos = pedido.ItensPedido.Select(ip => new ProdutoDTO
+                {
+                    Id = ip.Produto.Id,
+                    Descricao = ip.Produto.Descricao,
+                    PrecoUnitario = ip.Produto.PrecoUnitario,
+                    Quantidade = ip.Quantidade 
+                }).ToList()
+            };
+
+            return pedidoDTO;
+        }
+
+        public async Task<PedidoDTO> CancelarPedido(int pedidoId)
+        {
+            var pedido = await _repository.ListarPedidoPorID(pedidoId);
+            if (pedido == null) throw new NotFoundException("Pedido não encontrado");
+       
+            pedido.StatusPedido = StatusPedido.Cancelado;
+            pedido.DataCancelamento = DateTime.Now;
+
+            await _repository.CancelarPedido(pedidoId);
+
+            var pedidoDTO = new PedidoDTO
+            {
+                Id = pedido.Id,
+                DescricaoPedido = pedido.DescricaoPedido,
+                StatusPedido = pedido.StatusPedido,
+                DataAbertura = pedido.DataAbertura,
+                DataFaturamento = pedido.DataFaturamento,
+                DataFechamento = pedido.DataFechamento,
+                DataCancelamento = pedido.DataCancelamento,
+                Produtos = pedido.ItensPedido.Select(ip => new ProdutoDTO
+                {
+                    Id = ip.Produto.Id,
+                    Descricao = ip.Produto.Descricao,
+                    PrecoUnitario = ip.Produto.PrecoUnitario,
+                    Quantidade = ip.Quantidade 
+                }).ToList()
             };
 
             return pedidoDTO;
@@ -69,7 +110,7 @@ namespace GerenciadorPedidos.Application.Services
         public async Task<PedidoDTO> ExcluirPedido(int pedidoId)
         {
             var pedido = await _repository.ListarPedidoPorID(pedidoId);
-            if (pedido == null) throw new Exception("Pedido não encontrado");
+            if (pedido == null) throw new NotFoundException("Pedido não encontrado");
 
             await _repository.ExcluirPedido(pedidoId);
 
@@ -79,9 +120,16 @@ namespace GerenciadorPedidos.Application.Services
                 DescricaoPedido = pedido.DescricaoPedido,
                 StatusPedido = pedido.StatusPedido,
                 DataAbertura = pedido.DataAbertura,
+                DataFaturamento = pedido.DataFaturamento,
                 DataFechamento = pedido.DataFechamento,
                 DataCancelamento = pedido.DataCancelamento,
-                DataFaturamento = pedido.DataFaturamento
+                Produtos = pedido.ItensPedido.Select(ip => new ProdutoDTO
+                {
+                    Id = ip.Produto.Id,
+                    Descricao = ip.Produto.Descricao,
+                    PrecoUnitario = ip.Produto.PrecoUnitario,
+                    Quantidade = ip.Quantidade 
+                }).ToList()
             };
 
             return pedidoDTO;
@@ -90,28 +138,35 @@ namespace GerenciadorPedidos.Application.Services
         public async Task<PedidoDTO> FaturarPedido(int pedidoId)
         {
             var pedido = await _repository.ListarPedidoPorID(pedidoId);
-            if (pedido == null) throw new Exception("Pedido não encontrado");
+            if (pedido == null) throw new NotFoundException("Pedido não encontrado");
 
             pedido.StatusPedido = StatusPedido.Faturado;
             pedido.DataFaturamento = DateTime.Now;
 
             await _repository.FaturarPedido(pedidoId);
-
-            return new PedidoDTO
+            
+            var pedidoDTO = new PedidoDTO
             {
                 Id = pedido.Id,
                 DescricaoPedido = pedido.DescricaoPedido,
                 StatusPedido = pedido.StatusPedido,
                 DataAbertura = pedido.DataAbertura,
+                DataFaturamento = pedido.DataFaturamento,
                 DataFechamento = pedido.DataFechamento,
                 DataCancelamento = pedido.DataCancelamento,
-                DataFaturamento = pedido.DataFaturamento
+                Produtos = pedido.ItensPedido.Select(ip => new ProdutoDTO
+                {
+                    Id = ip.Produto.Id,
+                    Descricao = ip.Produto.Descricao,
+                    PrecoUnitario = ip.Produto.PrecoUnitario,
+                    Quantidade = ip.Quantidade 
+                }).ToList()
             };
 
+            return pedidoDTO;
+
         }
-
-
-        //Método para retornar um pedido pelo ID;
+        
         public async Task<PedidoDTO> ListarPedidoID(int id)
         {
             var pedido = await _repository.ListarPedidoPorID(id);
@@ -121,16 +176,17 @@ namespace GerenciadorPedidos.Application.Services
         public async Task<IEnumerable<PedidoDTO>> ListarTodosAsync(StatusPedido? StatusPedido, int PageNumber, int PageSize)
         {
             var pedidos = await _repository.ListarTodos(StatusPedido, PageNumber, PageSize);
+            
             return _mapper.Map<IEnumerable<PedidoDTO>>(pedidos);
         }
 
         public async Task<PedidoDTO> RemoverProdutoDoPedido(int pedidoId, int produtoId)
         {
             var pedido = await _repository.ListarPedidoPorID(pedidoId);
-            if (pedido == null) throw new Exception("Pedido não encontrado");
+            if (pedido == null) throw new NotFoundException("Pedido não encontrado");
 
             var produto = await _produtoRepository.ListarProdutoPorID(produtoId);
-            if (produto == null) throw new Exception("Produto não encontrado");
+            if (produto == null) throw new NotFoundException("Produto não encontrado");
 
             pedido.RemoverProduto(produto);
             await _repository.AlterarPedido(pedidoId, pedido);
@@ -141,34 +197,47 @@ namespace GerenciadorPedidos.Application.Services
                 DescricaoPedido = pedido.DescricaoPedido,
                 StatusPedido = pedido.StatusPedido,
                 DataAbertura = pedido.DataAbertura,
-                DataFechamento = pedido.DataFechamento,
-                DataCancelamento = pedido.DataCancelamento,
-                DataFaturamento = pedido.DataFaturamento
+                Produtos = pedido.ItensPedido.Select(ip => new ProdutoDTO
+                {
+                    Id = ip.Produto.Id,
+                    Descricao = ip.Produto.Descricao,
+                    PrecoUnitario = ip.Produto.PrecoUnitario,
+                    Quantidade = ip.Quantidade 
+                }).ToList()
             };
-
+            
             return pedidoDTO;
         }
-
-        async Task<PedidoDTO> IPedidoService.FecharPedido(int pedidoId)
+        
+        public async Task<PedidoDTO> FecharPedido(int pedidoId)
         {
             var pedido = await _repository.ListarPedidoPorID(pedidoId);
-            if (pedido == null) throw new Exception("Pedido não encontrado");
+            if (pedido == null) throw new NotFoundException("Pedido não encontrado");
        
             pedido.StatusPedido = StatusPedido.Fechado;
             pedido.DataFechamento = DateTime.Now;
 
             await _repository.FecharPedido(pedidoId);
 
-            return new PedidoDTO
+            var pedidoDTO = new PedidoDTO
             {
                 Id = pedido.Id,
                 DescricaoPedido = pedido.DescricaoPedido,
                 StatusPedido = pedido.StatusPedido,
                 DataAbertura = pedido.DataAbertura,
+                DataFaturamento = pedido.DataFaturamento,
                 DataFechamento = pedido.DataFechamento,
                 DataCancelamento = pedido.DataCancelamento,
-                DataFaturamento = pedido.DataFaturamento
+                Produtos = pedido.ItensPedido.Select(ip => new ProdutoDTO
+                {
+                    Id = ip.Produto.Id,
+                    Descricao = ip.Produto.Descricao,
+                    PrecoUnitario = ip.Produto.PrecoUnitario,
+                    Quantidade = ip.Quantidade 
+                }).ToList()
             };
+
+            return pedidoDTO;
         }
     }
 }

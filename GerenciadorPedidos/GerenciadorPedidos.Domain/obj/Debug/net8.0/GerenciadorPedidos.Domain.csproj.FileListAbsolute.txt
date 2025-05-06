@@ -23,3 +23,16 @@ C:\Users\Usuário\Documents\APIGerenciadorPedidos\GerenciadorPedidos\Gerenciador
 C:\Users\Usuário\Documents\APIGerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\refint\GerenciadorPedidos.Domain.dll
 C:\Users\Usuário\Documents\APIGerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.pdb
 C:\Users\Usuário\Documents\APIGerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\ref\GerenciadorPedidos.Domain.dll
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\bin\Debug\net8.0\GerenciadorPedidos.Domain.deps.json
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\bin\Debug\net8.0\GerenciadorPedidos.Domain.dll
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\bin\Debug\net8.0\GerenciadorPedidos.Domain.pdb
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.csproj.AssemblyReference.cache
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.AssemblyInfoInputs.cache
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.AssemblyInfo.cs
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.sourcelink.json
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.dll
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\refint\GerenciadorPedidos.Domain.dll
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.pdb
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\ref\GerenciadorPedidos.Domain.dll

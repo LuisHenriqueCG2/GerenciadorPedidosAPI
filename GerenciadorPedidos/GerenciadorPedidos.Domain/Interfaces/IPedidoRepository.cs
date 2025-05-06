@@ -14,6 +14,7 @@ namespace GerenciadorPedidos.Domain.Interfaces
         Task<Pedido> AlterarPedido(int id, Pedido pedidoAtualizado);
         Task<Pedido> FecharPedido(int id);
         Task<Pedido> FaturarPedido(int id);
+        Task<Pedido> CancelarPedido(int id);
         Task<Pedido> ExcluirPedido(int id);
         Task<Pedido> ListarPedidoPorID(int id);
         Task<IEnumerable<Pedido>> ListarTodos(StatusPedido? status, int pageNumber, int pageSize);

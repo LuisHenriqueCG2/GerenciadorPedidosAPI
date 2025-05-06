@@ -23,9 +23,10 @@ namespace GerenciadorPedidos.Application.Mappings
                 {
                     Id = ip.Produto.Id,
                     Descricao = ip.Produto.Descricao,
-                    PrecoUnitario = ip.Produto.PrecoUnitario
+                    DataCadastro = ip.Produto.DataCadastro,
+                    PrecoUnitario = ip.Produto.PrecoUnitario,
+                    Quantidade = ip.Quantidade 
                 });
-
             CreateMap<Pedido, PedidoDTO>()
                 .ForMember(dest => dest.Produtos, opt => opt.MapFrom(src => src.ItensPedido.Select(ip => ip.Produto)));
 

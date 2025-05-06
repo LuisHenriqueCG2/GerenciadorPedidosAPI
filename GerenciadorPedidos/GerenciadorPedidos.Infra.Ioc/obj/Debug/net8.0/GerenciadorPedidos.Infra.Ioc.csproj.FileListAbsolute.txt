@@ -37,3 +37,23 @@ C:\Users\Usuário\Documents\APIGerenciadorPedidos\GerenciadorPedidos\Gerenciador
 C:\Users\Usuário\Documents\APIGerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\refint\GerenciadorPedidos.Infra.Ioc.dll
 C:\Users\Usuário\Documents\APIGerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.pdb
 C:\Users\Usuário\Documents\APIGerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\ref\GerenciadorPedidos.Infra.Ioc.dll
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.deps.json
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.dll
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.pdb
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Application.dll
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Domain.dll
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.dll
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Application.pdb
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Domain.pdb
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.pdb
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.csproj.AssemblyReference.cache
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.AssemblyInfoInputs.cache
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.AssemblyInfo.cs
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.sourcelink.json
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\Gerencia.C0683062.Up2Date
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.dll
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\refint\GerenciadorPedidos.Infra.Ioc.dll
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.pdb
+C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\ref\GerenciadorPedidos.Infra.Ioc.dll

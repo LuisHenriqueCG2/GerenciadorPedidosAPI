@@ -1,9 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using GerenciadorPedidos.Application.DTOs;
 using GerenciadorPedidos.Application.Interfaces;
+using GerenciadorPedidos.Application.Pedidos.Commands;
+using GerenciadorPedidos.Application.Pedidos.Queries;
+using GerenciadorPedidos.Application.Produtos.Commands;
 using GerenciadorPedidos.Application.Services;
 using GerenciadorPedidos.Domain.Entities;
 using GerenciadorPedidos.Domain.Enums;
+using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -14,200 +18,91 @@ namespace GerenciadorPedidos.API.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
-    public class PedidosController : ControllerBase
+    public class PedidosController(IPedidoService pedidoService, ISender sender) : ControllerBase
     {
-        private readonly IPedidoService _pedidoService;
-
-        public PedidosController(IPedidoService pedidoService)
-        {
-            _pedidoService = pedidoService;
-        }
-
-        [HttpPost("CriarPedido")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
+        [HttpPost("Criar")]
         [SwaggerOperation
             (Summary = "Cria um novo pedido",
             Description = "Recebe a Descrição do pedido e retorna o pedido criado com informações adicionais.")]
-        public async Task<ActionResult<PedidoDTO>> AdicionarPedido(
-            [FromBody] CriarPedidoDTO dto)
+        public async Task<ActionResult<PedidoDTO>> PostTaskAsync([FromQuery] PostPedidoCommand command)
         {
-            var pedido = await _pedidoService.AdicionarPedido(dto.DescricaoPedido);
-
-            var pedidoDTO = new PedidoDTO
-            {
-                Id = pedido.Id,
-                DescricaoPedido = pedido.DescricaoPedido,
-                StatusPedido = pedido.StatusPedido,
-                DataAbertura = pedido.DataAbertura
-            };
-
-            return Ok(pedidoDTO);
+            return Ok(await sender.Send(command));
         }
 
         [HttpPost("AdicionarProduto")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
         [SwaggerOperation
             (Summary = "Adiciona um produto ao pedido",
             Description = "Recebe o ID do pedido, ID do produto e a Quantidade para a inclusão no pedido e retorna o pedido " +
             "criado com informações adicionais.")]
-        public async Task<IActionResult> AdicionarProdutoAoPedido(
-        [SwaggerParameter(Required = true)]
-        [FromQuery, Required] int PedidoID, 
-        [FromQuery, Required] int ProdutoID, 
-        [FromQuery, Required] int Quantidade)
+        public async Task<IActionResult> PostProductTaskAsync([FromQuery] PostAddProdutoPedidoCommand query)
         {
-            try
-            {
-                await _pedidoService.AdicionarProdutoAoPedido(PedidoID, ProdutoID, Quantidade);
-                var pedidoDTO = await _pedidoService.ListarPedidoID(PedidoID);
-                if (pedidoDTO == null)
-                {
-                    return NotFound("Pedido não encontrado!");
-                }
-                return Ok(pedidoDTO);
-
-
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return Ok(await sender.Send(query));
         }
 
         [HttpPut("RemoverProduto")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
         [SwaggerOperation(
             Summary = "Remove um produto do pedido",
             Description = "Recebe o ID do pedido, ID do produto e a Quantidade para a inclusão no pedido e retorna o " +
             "pedido criado com informações adicionais.")]
-        public async Task<IActionResult> RemoverProdutoPedido(
-        [SwaggerParameter(Required = true)]
-        [FromQuery, Required] int PedidoID,
-        [FromQuery, Required] int ProdutoID)
+        public async Task<IActionResult> PutRemoveProdutoTaskAsync([FromQuery] PutRemoveProdutoCommand query)
         {
-            try
-            {
-                if (PedidoID == 0 || ProdutoID == 0)
-                {
-                    return BadRequest("Os parâmetros PedidoID e ProdutoID são obrigatórios.");
-                }
-
-                await _pedidoService.RemoverProdutoDoPedido(PedidoID, ProdutoID);
-                var pedidoDTO = await _pedidoService.ListarPedidoID(PedidoID);
-
-                return Ok("Produto removido com sucesso do pedido!");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return Ok(await sender.Send(query));
         }
 
-
-        [HttpPut("FecharPedido")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
+        [HttpPut("Fechar")]
         [SwaggerOperation(
             Summary = "Fechar pedido",
             Description = "Recebe o ID do Pedido para atualizar o Status para Fechado")]
-        public async Task<IActionResult> FecharPedido(
-            [SwaggerParameter(Required = true)] 
-            [FromQuery, Required] int PedidoID)
+        public async Task<IActionResult> PutFecharPedidoTaskAsync([FromQuery] PutFecharPedidoCommand query)
         {
-            try
-            {
-                await _pedidoService.FecharPedido(PedidoID);
-                return Ok("Pedido fechado com sucesso!");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return Ok(await sender.Send(query));
         }
 
-        [HttpPut("FaturarPedido")]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
+        [HttpPut("Faturar")]
         [SwaggerOperation(
             Summary = "Faturar pedido",
             Description = "Recebe o ID do Pedido para atualizar o Status para Faturado")]
-        public async Task<IActionResult> FaturarPedido(
-            [SwaggerParameter(Required = true)]
-            [FromQuery, Required] int PedidoID)
+        public async Task<IActionResult> PutFaturarPedidoTaskAsync([FromQuery] PutFaturarPedidoCommand query)
+        {  
+            return Ok(await sender.Send(query));
+        }
+        
+        [HttpPut("Cancelar")]
+        [SwaggerOperation(
+            Summary = "Cancelar pedido",
+            Description = "Recebe o ID do Pedido para atualizar o Status para Cancelado mantendo seu histórico")]
+        public async Task<IActionResult> PutCancelarPedidoTaskAsync([FromQuery] PutCancelarPedidoCommand query)
         {
-            try
-            {
-                await _pedidoService.FaturarPedido(PedidoID);
-                return Ok("Pedido faturado com sucesso!");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return Ok(await sender.Send(query));
         }
 
-        [HttpDelete("ExcluirPedido")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
+        [HttpDelete("Deletar")]
         [SwaggerOperation(
             Summary = "Deletar pedido",
             Description = "Recebe o ID do Pedido para excluir o pedido da base de dados")]
-        public async Task<IActionResult> ExcluirPedido(
-            [SwaggerParameter(Required = true)]
-            [FromQuery, Required] int PedidoID)
+        public async Task<IActionResult> DeleteProdutoTaskAsync([FromQuery]  DeleteExcluirPedidoCommand query)
         {
-            var resultado = await _pedidoService.ExcluirPedido(PedidoID);
-            if (resultado == null)
-            {
-                return BadRequest("Ocorreu um erro ao excluir o pedido!");
-            }
-            return Ok("Pedido excluído com sucesso!");
+            await sender.Send(query);                                  
+            return Ok(new { message = "Produto deletado com sucesso!"}); 
         }
 
-        [HttpGet("ConsultarPedidoId")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
+        [HttpGet("ConsultarPorId")]
         [SwaggerOperation(
             Summary = "Listar Pedido pelo ID",
             Description = "Recebe o ID do Pedido para Obter um pedido específico")]
-        public async Task<ActionResult> ObterPorId(
-            [SwaggerParameter(Required = true)]
-            [FromQuery, Required] int Id)
+        public async Task<ActionResult> GetIdTaskAsync([FromQuery] GetPedidoIdQuery query)
         {
-            var pedidoDTO = await _pedidoService.ListarPedidoID(Id);
-            if (pedidoDTO == null)
-            {
-                return NotFound("Pedido não encontrado!");
-            }
-            return Ok(pedidoDTO);
+            return Ok(await sender.Send(query));
         }
-
         
-        [HttpGet("ListarTodos")]
-        [ProducesResponseType(typeof(PedidoDTO), 200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(500)]
+        [HttpGet("ObterTodos")]
         [SwaggerOperation(
             Summary = "Listar Todos os Pedidos",
-            Description = "Retorna uma lista paginada de pedidos filtrados por status. Parâmetros opcionais: status, page (padrão 1), pageSize (padrão 10).")]
-        public async Task<ActionResult> ListarTodos(
-            [SwaggerParameter(Description = "(ex: 1 - Aberto; 2 - Fechado; 3 - Cancelado ou Excluído; 4 - Faturado;)", Required = false)]
-            [FromQuery] StatusPedido? StatusPedido = null,
-            [FromQuery] int PageNumber = 1,
-            [FromQuery] int PageSize = 10)
+            Description = "Retorna uma lista paginada de pedidos filtrados por status. Parâmetros opcionais: " +
+                          "status, pageNumber (padrão 1), pageSize (padrão 10).")]
+        public async Task<ActionResult> GetTaskAsync([FromQuery] GetPedidoQuery query)
         {
-            var pedidosDTO = await _pedidoService.ListarTodosAsync(StatusPedido, PageNumber, PageSize);
-            return Ok(pedidosDTO);
+            return Ok(await sender.Send(query));
         }
 
     }

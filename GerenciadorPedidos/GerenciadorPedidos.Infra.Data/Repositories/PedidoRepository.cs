@@ -61,6 +61,24 @@ namespace GerenciadorPedidos.Infra.Data.Repositories
             await _context.SaveChangesAsync();
             return pedidoExistente;
         }
+
+        public async Task<Pedido> CancelarPedido(int id)
+        {
+            var pedido = await _context.Pedidos
+                .Include(p => p.ItensPedido)
+                .ThenInclude(ip => ip.Produto)
+                .FirstOrDefaultAsync(p => p.Id == id);
+
+            if (pedido == null) throw new Exception("Pedido não encontrado");
+
+            pedido.StatusPedido = StatusPedido.Cancelado;
+            pedido.DataCancelamento = DateTime.Now;
+
+            await _context.SaveChangesAsync();
+
+            return pedido;
+        }
+
         public async Task<Pedido> ExcluirPedido(int id)
         {
             var pedido = await _context.Pedidos.FindAsync(id);
@@ -117,27 +135,38 @@ namespace GerenciadorPedidos.Infra.Data.Repositories
 
         public async Task<Pedido> ListarPedidoPorID(int id)
         {
-            return await _context.Pedidos
-            .Include(p => p.ItensPedido)
-            .ThenInclude(ip => ip.Produto)
-            .FirstOrDefaultAsync(p => p.Id == id);
+            var pedido = await _context.Pedidos
+                .Include(p => p.ItensPedido)
+                .ThenInclude(ip => ip.Produto)
+                .FirstOrDefaultAsync(p => p.Id == id);
 
+            if (pedido == null)
+                throw new KeyNotFoundException($"Pedido com ID {id} não encontrado.");
+
+            return pedido;
         }
-        public async Task<IEnumerable<Pedido>> ListarTodos(StatusPedido? StatusPedido, int PageNumber, int PageSize)
+
+        public async Task<IEnumerable<Pedido>> ListarTodos(StatusPedido? status, int pageNumber, int pageSize)
         {
+            pageNumber = pageNumber < 1 ? 1 : pageNumber;
+            pageSize = pageSize < 1 ? 10 : pageSize;
+
             var query = _context.Pedidos
                 .Include(p => p.ItensPedido)
                 .ThenInclude(ip => ip.Produto)
                 .AsQueryable();
 
-            if (StatusPedido.HasValue)
-                query = query.Where(p => p.StatusPedido == StatusPedido.Value);
+            if (status.HasValue)
+            {
+                query = query.Where(p => p.StatusPedido == status.Value);
+            }
 
             return await query
-                .Skip((PageNumber - 1) * PageSize)
-                .Take(PageSize)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
                 .ToListAsync();
         }
+        
         public async Task<bool> SaveAllAsync()
         {
             return await _context.SaveChangesAsync() > 0;

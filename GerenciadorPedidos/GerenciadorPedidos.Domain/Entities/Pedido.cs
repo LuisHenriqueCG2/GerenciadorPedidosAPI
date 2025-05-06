@@ -25,16 +25,24 @@ namespace GerenciadorPedidos.Domain.Entities
             DataFaturamento = null;
         }
 
-        public ItemPedido AdicionarProduto(Produto produto, int quantidade)
+        public void AdicionarProduto(Produto produto, int quantidade)
         {
             if (StatusPedido != StatusPedido.Aberto)
                 throw new InvalidOperationException("Não é possível adicionar produtos a um pedido fechado, cancelado ou faturado.");
 
-            var item = new ItemPedido(Id, produto.Id, quantidade, produto.PrecoUnitario * quantidade);
-            ItensPedido.Add(item);
-            return item;
+            var itemPedidoExistente = ItensPedido.FirstOrDefault(ip => ip.ProdutoId == produto.Id);
+            if (itemPedidoExistente != null)
+            {
+                itemPedidoExistente.Quantidade = quantidade;
+                itemPedidoExistente.ValorTotal = produto.PrecoUnitario * quantidade; 
+            }
+            else
+            {
+                var item = new ItemPedido(Id, produto.Id, quantidade, produto.PrecoUnitario * quantidade);
+                ItensPedido.Add(item);
+            }
         }
-
+        
         public void RemoverProduto(Produto produto)
         {
             if (StatusPedido != StatusPedido.Aberto)

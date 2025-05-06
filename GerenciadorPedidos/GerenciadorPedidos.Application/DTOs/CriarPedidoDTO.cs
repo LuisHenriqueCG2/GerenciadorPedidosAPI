@@ -9,14 +9,17 @@ namespace GerenciadorPedidos.Application.DTOs
 {
     public class CriarPedidoDTO
     {
-        [MaxLength(255, ErrorMessage = "A Descrição do pedido não pode ultrapassar 255 caracteres!")]
-        [Required(ErrorMessage = "O campo descrição é obrigatório!")]
-        public string DescricaoPedido { get; set; }
+        public CriarPedidoDTO() {} 
 
         public CriarPedidoDTO(string descricaoPedido)
         {
             DescricaoPedido = descricaoPedido;
         }
+
+        [MaxLength(255, ErrorMessage = "A Descrição do pedido não pode ultrapassar 255 caracteres!")]
+        [Required(ErrorMessage = "O campo descrição é obrigatório!")]
+        public string DescricaoPedido { get; set; }
     }
+
 
 }

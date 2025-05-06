@@ -11,10 +11,11 @@ namespace GerenciadorPedidos.Application.Interfaces
 {
     public interface IPedidoService
     {
-        Task<Pedido> AdicionarPedido(string descricaoPedido);
+        Task<PedidoDTO> AdicionarPedido(string descricaoPedido);
         Task<PedidoDTO> AdicionarProdutoAoPedido(int pedidoId, int produtoId, int quantidade);
         Task<PedidoDTO> FecharPedido(int pedidoId);
         Task<PedidoDTO> FaturarPedido(int pedidoId);
+        Task<PedidoDTO> CancelarPedido(int pedidoId);
         Task<PedidoDTO> ExcluirPedido(int pedidoId);
         Task<PedidoDTO> RemoverProdutoDoPedido(int pedidoId, int produtoId);
         Task<PedidoDTO> ListarPedidoID(int id);
