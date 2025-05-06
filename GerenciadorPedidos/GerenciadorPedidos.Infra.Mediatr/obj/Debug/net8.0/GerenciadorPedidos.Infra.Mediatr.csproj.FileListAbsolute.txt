@@ -11,3 +11,16 @@ C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPed
 C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\refint\GerenciadorPedidos.Infra.Mediatr.dll
 C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.pdb
 C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\ref\GerenciadorPedidos.Infra.Mediatr.dll
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\bin\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.deps.json
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\bin\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.dll
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\bin\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.pdb
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.csproj.AssemblyReference.cache
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.AssemblyInfoInputs.cache
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.AssemblyInfo.cs
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.sourcelink.json
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.dll
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\refint\GerenciadorPedidos.Infra.Mediatr.dll
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.pdb
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\ref\GerenciadorPedidos.Infra.Mediatr.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fAclJmcSVZ4=",
+  "dgSpecHash": "ZQXACEvjRSU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Mediatr\\GerenciadorPedidos.Infra.Mediatr.csproj",
+  "projectFilePath": "C:\\Users\\Usuário\\Desktop\\Projeots\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Mediatr\\GerenciadorPedidos.Infra.Mediatr.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

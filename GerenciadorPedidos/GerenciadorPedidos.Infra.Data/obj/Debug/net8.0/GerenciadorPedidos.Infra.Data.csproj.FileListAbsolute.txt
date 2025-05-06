@@ -51,3 +51,21 @@ C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPed
 C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.pdb
 C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.genruntimeconfig.cache
 C:\Users\Usuário\Documents\APIGerenciadorPedidos - Copia - Copia\GerenciadorPedidos\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\ref\GerenciadorPedidos.Infra.Data.dll
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.deps.json
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.runtimeconfig.json
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.dll
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.pdb
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Domain.dll
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\bin\Debug\net8.0\GerenciadorPedidos.Domain.pdb
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.AssemblyInfo.cs
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.sourcelink.json
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\Gerencia.8CB041DC.Up2Date
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.dll
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\refint\GerenciadorPedidos.Infra.Data.dll
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.pdb
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\GerenciadorPedidos.Infra.Data.genruntimeconfig.cache
+C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Data\obj\Debug\net8.0\ref\GerenciadorPedidos.Infra.Data.dll

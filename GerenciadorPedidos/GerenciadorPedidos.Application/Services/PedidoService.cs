@@ -42,7 +42,7 @@ namespace GerenciadorPedidos.Application.Services
 
             await _repository.AdicionarPedido(novoPedido);
 
-            return _mapper.Map<PedidoDTO>(novoPedido);;
+            return _mapper.Map<PedidoDTO>(novoPedido); ;
         }
 
 
@@ -69,7 +69,7 @@ namespace GerenciadorPedidos.Application.Services
                     Id = ip.Produto.Id,
                     Descricao = ip.Produto.Descricao,
                     PrecoUnitario = ip.Produto.PrecoUnitario,
-                    Quantidade = ip.Quantidade 
+                    Quantidade = ip.Quantidade
                 }).ToList()
             };
 
@@ -80,7 +80,12 @@ namespace GerenciadorPedidos.Application.Services
         {
             var pedido = await _repository.ListarPedidoPorID(pedidoId);
             if (pedido == null) throw new NotFoundException("Pedido não encontrado");
-       
+
+            if (pedido.StatusPedido == StatusPedido.Faturado || pedido.StatusPedido == StatusPedido.Cancelado)
+            {
+                throw new Exception("Não é possível cancelar um pediudo Faturado ou Cancelado!");
+            }
+
             pedido.StatusPedido = StatusPedido.Cancelado;
             pedido.DataCancelamento = DateTime.Now;
 
@@ -139,6 +144,21 @@ namespace GerenciadorPedidos.Application.Services
         {
             var pedido = await _repository.ListarPedidoPorID(pedidoId);
             if (pedido == null) throw new NotFoundException("Pedido não encontrado");
+
+            if (pedido.StatusPedido == StatusPedido.Aberto)
+            {
+                throw new Exception("O pedido está aberto. Feche primeiro antes de faturar!");
+            }
+
+            if (pedido.StatusPedido == StatusPedido.Cancelado)
+            {
+                throw new Exception("O pedido está cancelado. Não é possível faturar!");
+            }
+
+            if (pedido.StatusPedido == StatusPedido.Faturado)
+            {
+                throw new Exception("O pedido já está faturado!");
+            }
 
             pedido.StatusPedido = StatusPedido.Faturado;
             pedido.DataFaturamento = DateTime.Now;
@@ -213,7 +233,12 @@ namespace GerenciadorPedidos.Application.Services
         {
             var pedido = await _repository.ListarPedidoPorID(pedidoId);
             if (pedido == null) throw new NotFoundException("Pedido não encontrado");
-       
+
+            if (pedido.StatusPedido != StatusPedido.Aberto)
+            {
+                throw new Exception("O pedido precisa estar aberto para ser fechado!");
+            }
+
             pedido.StatusPedido = StatusPedido.Fechado;
             pedido.DataFechamento = DateTime.Now;
 

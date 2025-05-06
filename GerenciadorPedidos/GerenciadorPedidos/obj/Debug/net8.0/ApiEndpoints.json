@@ -1,19 +1,19 @@
 [
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
-    "Method": "AdicionarProdutoAoPedido",
+    "Method": "PostProductTaskAsync",
     "RelativePath": "api/v1/Pedidos/AdicionarProduto",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "PedidoID",
+        "Name": "IdPedido",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "ProdutoID",
+        "Name": "IdProduto",
         "Type": "System.Int32",
         "IsRequired": false
       },
@@ -23,84 +23,52 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
-    "Method": "ObterPorId",
-    "RelativePath": "api/v1/Pedidos/ConsultarPedidoId",
+    "Method": "PutCancelarPedidoTaskAsync",
+    "RelativePath": "api/v1/Pedidos/Cancelar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdPedido",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
+    "Method": "GetIdTaskAsync",
+    "RelativePath": "api/v1/Pedidos/ConsultarPorId",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "IdPedido",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
-    "Method": "AdicionarPedido",
-    "RelativePath": "api/v1/Pedidos/CriarPedido",
+    "Method": "PostTaskAsync",
+    "RelativePath": "api/v1/Pedidos/Criar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "GerenciadorPedidos.Application.DTOs.CriarPedidoDTO",
-        "IsRequired": true
+        "Name": "Descricao",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -112,143 +80,61 @@
           "text/json"
         ],
         "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
       }
     ]
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
-    "Method": "ExcluirPedido",
-    "RelativePath": "api/v1/Pedidos/ExcluirPedido",
+    "Method": "DeleteProdutoTaskAsync",
+    "RelativePath": "api/v1/Pedidos/Deletar",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "PedidoID",
+        "Name": "IdPedido",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
-    "Method": "FaturarPedido",
-    "RelativePath": "api/v1/Pedidos/FaturarPedido",
+    "Method": "PutFaturarPedidoTaskAsync",
+    "RelativePath": "api/v1/Pedidos/Faturar",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "PedidoID",
+        "Name": "IdPedido",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
-    "Method": "FecharPedido",
-    "RelativePath": "api/v1/Pedidos/FecharPedido",
+    "Method": "PutFecharPedidoTaskAsync",
+    "RelativePath": "api/v1/Pedidos/Fechar",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "PedidoID",
+        "Name": "IdPedido",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
-    "Method": "ListarTodos",
-    "RelativePath": "api/v1/Pedidos/ListarTodos",
+    "Method": "GetTaskAsync",
+    "RelativePath": "api/v1/Pedidos/ObterTodos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -269,269 +155,112 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.PedidosController",
-    "Method": "RemoverProdutoPedido",
+    "Method": "PutRemoveProdutoTaskAsync",
     "RelativePath": "api/v1/Pedidos/RemoverProduto",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "PedidoID",
+        "Name": "IdPedido",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "ProdutoID",
+        "Name": "IdProduto",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.ProdutoController",
-    "Method": "AlterarProduto",
+    "Method": "PutTaskAsync",
     "RelativePath": "api/v1/Produto/Alterar",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "produtoDTO",
-        "Type": "GerenciadorPedidos.Application.DTOs.ProdutoDTO",
+        "Name": "query",
+        "Type": "GerenciadorPedidos.Application.Produtos.Commands.PutProdutoCommand",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.ProdutoController",
-    "Method": "AdicionarProduto",
+    "Method": "PostTaskAsync",
     "RelativePath": "api/v1/Produto/Cadastrar",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "produtoDTO",
-        "Type": "GerenciadorPedidos.Application.DTOs.ProdutoDTO",
+        "Name": "query",
+        "Type": "GerenciadorPedidos.Application.Produtos.Commands.PostProdutoCommand",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.ProdutoController",
-    "Method": "ListarPorID",
+    "Method": "GetIdTaskAsync",
     "RelativePath": "api/v1/Produto/ConsultarId",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "IdProduto",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.ProdutoController",
-    "Method": "ExcluirProduto",
+    "Method": "DeleteTaskAsync",
     "RelativePath": "api/v1/Produto/Deletar",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "IdProduto",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GerenciadorPedidos.API.Controllers.ProdutoController",
-    "Method": "ListarTodos",
+    "Method": "GetTaskAsync",
     "RelativePath": "api/v1/Produto/ListarTodos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
       },
       {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
-    ]
+    ],
+    "ReturnTypes": []
   }
 ]

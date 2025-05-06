@@ -221,11 +221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Mediatr\\GerenciadorPedidos.Infra.Mediatr.csproj",
+      "projectUniqueName": "C:\\Users\\Usuário\\Desktop\\Projeots\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Mediatr\\GerenciadorPedidos.Infra.Mediatr.csproj",
       "projectName": "GerenciadorPedidos.Infra.Mediatr",
-      "projectPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Mediatr\\GerenciadorPedidos.Infra.Mediatr.csproj",
+      "projectPath": "C:\\Users\\Usuário\\Desktop\\Projeots\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Mediatr\\GerenciadorPedidos.Infra.Mediatr.csproj",
       "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuário\\Documents\\APIGerenciadorPedidos - Copia - Copia\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Mediatr\\obj\\",
+      "outputPath": "C:\\Users\\Usuário\\Desktop\\Projeots\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Mediatr\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
