@@ -20,12 +20,13 @@ A API permite:
 - **Adicionar produtos ao pedido**: Adiciona produtos a um pedido específico que esteja aberto.
 - **Remover produtos do pedido**: Remove produtos de um pedido aberto.
 - **Fechar um pedido**: Muda o status do pedido para fechado, impedindo novas alterações, exceto excluí-lo.
+- **Cancelar um pedido**: Muda o status do pedido para cancelado, mantendo seu histórico de produtos vinculados.
 - **Excluir um pedido**: Deleta um pedido da base de dados.
 - **Listar pedidos**: Lista todos os pedidos, com suporte à paginação.
 - **Filtrar pedidos por status**: Filtra pedidos pelo status (aberto, fechado ou cancelado).
 - **Obter detalhes de um pedido**: Retorna os detalhes de um pedido e seus produtos associados.
 - **Criar um novo produto**: Permite cadastrar um produto no sistema.
-- **Listar produtos**: Lista os produtos cadastrados.
+- **Listar produtos**: Lista os produtos cadastrados com suporte à paginação.
 
 ---
 
@@ -54,7 +55,7 @@ A API foi construída seguindo o conceito de **DDD**. Abaixo está um resumo das
 ### 🛒 Pedido
 URL BASE `api/v1/Pedidos`
 
-- `POST /CriarPedido`  
+- `POST /Criar`  
   Inicia um novo pedido.
 
 - `POST /AdicionarProduto`  
@@ -63,16 +64,19 @@ URL BASE `api/v1/Pedidos`
 - `PUT /RemoverProduto`  
   Remove um produto de um pedido.
 
-- `PUT /FecharPedido`  
+- `PUT /Fechar`  
   Fecha um pedido, impedindo novas alterações, exceto excluí-lo.
 
-- `PUT /FaturarPedido`  
+- `PUT /Faturar`  
   Fatura um pedido, alterando seu status para faturado e incluído a data de faturamento.
 
-- `DELETE /ExcluirPedido`  
+- `PUT /Cancelar`  
+  Fatura um pedido, alterando seu status para faturado e incluído a data de faturamento.
+
+- `DELETE /Deletar`  
   Deleta um pedido.
 
-- `GET /ConsultarPedidoId`  
+- `GET /ConsultarId`  
   Lista um Pedido pelo ID.
 
 - `GET /ListarTodos`  
@@ -108,6 +112,7 @@ URL BASE `api/v1/Produtos`
 - DDD (Domain-Driven Design)
 - Swagger para documentação
 - xUnit para testes unitários
+- CQRS para separar os modelos para ler e gravar dados.
 
 ---
 
@@ -152,8 +157,5 @@ Esse comando será para atualizar as tabelas conforme estruturado nas `EntitiesC
 
 Se der tudo certo, basta definir o projeto `GerenciadorPedidos.API` como projeto de incialização e em seguida executar.  
 
-![image](https://github.com/user-attachments/assets/a35541c7-3c7c-40d1-b6fb-f06f34a1b166)  
-  
-![image](https://github.com/user-attachments/assets/2ac86727-7da2-487f-85a1-718be6e38c35)
-
-
+![image](https://github.com/user-attachments/assets/9c6d47e5-82a3-48dd-b8b1-5e90ce5ad747)
+![image](https://github.com/user-attachments/assets/610ba12a-c659-4da3-aede-a58d9d486da2)
