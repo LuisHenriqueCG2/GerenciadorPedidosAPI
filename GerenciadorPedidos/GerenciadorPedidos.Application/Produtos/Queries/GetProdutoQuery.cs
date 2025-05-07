@@ -2,14 +2,18 @@
 using GerenciadorPedidos.Application.Interfaces;
 using GerenciadorPedidos.Domain.Enums;
 using MediatR;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace GerenciadorPedidos.Application.Produtos.Queries;
 
 public class GetProdutoQuery : IRequest<IEnumerable<ProdutoDTO>>
-{ 
+{
+    [SwaggerParameter(Description = "Número da página.")]
     public int PageNumber { get; set; } = 1;
-    public int PageSize { get; set; } = 10;
-    
+
+    [SwaggerParameter(Description = "Quantidade de itens por página.")]
+    public int PageSize { get; set; } = 20;
+
 }
 
 public class GetProdutoQueryHandler(IProdutoService produtoService) :

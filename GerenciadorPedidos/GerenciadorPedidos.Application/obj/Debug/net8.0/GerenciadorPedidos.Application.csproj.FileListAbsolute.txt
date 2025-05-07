@@ -61,3 +61,19 @@ C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\Gere
 C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\refint\GerenciadorPedidos.Application.dll
 C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\GerenciadorPedidos.Application.pdb
 C:\Users\Usuário\Desktop\Projeots\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\ref\GerenciadorPedidos.Application.dll
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\bin\Debug\net8.0\GerenciadorPedidos.Application.deps.json
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\bin\Debug\net8.0\GerenciadorPedidos.Application.dll
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\bin\Debug\net8.0\GerenciadorPedidos.Application.pdb
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\bin\Debug\net8.0\GerenciadorPedidos.Domain.dll
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\bin\Debug\net8.0\GerenciadorPedidos.Domain.pdb
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\GerenciadorPedidos.Application.csproj.AssemblyReference.cache
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\GerenciadorPedidos.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\GerenciadorPedidos.Application.AssemblyInfoInputs.cache
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\GerenciadorPedidos.Application.AssemblyInfo.cs
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\GerenciadorPedidos.Application.csproj.CoreCompileInputs.cache
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\GerenciadorPedidos.Application.sourcelink.json
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\Gerencia.9518AD54.Up2Date
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\GerenciadorPedidos.Application.dll
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\refint\GerenciadorPedidos.Application.dll
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\GerenciadorPedidos.Application.pdb
+D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Application\obj\Debug\net8.0\ref\GerenciadorPedidos.Application.dll

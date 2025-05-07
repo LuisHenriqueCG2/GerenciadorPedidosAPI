@@ -423,6 +423,7 @@
           {
             "name": "PageNumber",
             "in": "query",
+            "description": "Número da página.",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -431,6 +432,7 @@
           {
             "name": "PageSize",
             "in": "query",
+            "description": "Quantidade de itens por página.",
             "schema": {
               "type": "integer",
               "format": "int32"

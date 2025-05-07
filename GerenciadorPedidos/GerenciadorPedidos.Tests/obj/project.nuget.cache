@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xbFwqw4i6ic=",
+  "dgSpecHash": "vVIHtcqNdiU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuário\\Desktop\\Projeots\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\GerenciadorPedidos.Tests.csproj",
+  "projectFilePath": "D:\\Projeto Gerenciador Pedidos API\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\GerenciadorPedidos.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
