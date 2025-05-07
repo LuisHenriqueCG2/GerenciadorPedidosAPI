@@ -1,46 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
-namespace GerenciadorPedidos.Infra.Ioc
-{
-    public static class DependencyInjectionSwagger
-    {
-        public static IServiceCollection AddInfrastructureSwagger(this IServiceCollection services) 
-        {
-            services.AddSwaggerGen(c =>
-            {
-                c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
-                {
-                    Name = "Authorization",
-                    Type = SecuritySchemeType.ApiKey,
-                    BearerFormat = "JWT",
-                    In = ParameterLocation.Header,
-                    Description = "JSON Web Token is an Internet standard for creating optionally signed and/or encrypted data whose payload contains JSON that asserts some number of claims."
-                });
+namespace GerenciadorPedidos.Infra.Ioc;
 
-                c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement()
-                {
-                    {
-                        new OpenApiSecurityScheme()
-                        {
-                            Reference = new OpenApiReference()
-                            {
-                                Type = ReferenceType.SecurityScheme,
-                                Id = "Bearer"
-                            }
-                        },
-                        new string[]{}
-                    }
-                });
-                
-                   
+public static class DependencyInjectionSwagger
+{
+    public static IServiceCollection AddInfrastructureSwagger(this IServiceCollection services)
+    {
+        services.AddSwaggerGen(c =>
+        {
+            c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+            {
+                Name = "Authorization",
+                Type = SecuritySchemeType.ApiKey,
+                BearerFormat = "JWT",
+                In = ParameterLocation.Header,
+                Description =
+                    "JSON Web Token is an Internet standard for creating optionally signed and/or encrypted data whose payload contains JSON that asserts some number of claims."
             });
-            return services;
-        }
+
+            c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+            {
+                {
+                    new OpenApiSecurityScheme()
+                    {
+                        Reference = new OpenApiReference()
+                        {
+                            Type = ReferenceType.SecurityScheme,
+                            Id = "Bearer"
+                        }
+                    },
+                    []
+                }
+            });
+        });
+        return services;
     }
 }

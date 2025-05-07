@@ -1,18 +1,18 @@
-﻿using GerenciadorPedidos.Application.DTOs;
+﻿using GerenciadorPedidos.Application.Dtos;
 using GerenciadorPedidos.Application.Interfaces;
 using MediatR;
 
 namespace GerenciadorPedidos.Application.Pedidos.Commands;
 
-     public class DeleteExcluirPedidoCommand : IRequest<PedidoDTO>
+     public class DeleteExcluirPedidoCommand : IRequest<PedidoDto>
     {
         public required int IdPedido { get; set; }
     }
 
     public class DeleteExcluirPedidoCommandHandler(IPedidoService pedidoService) :
-        IRequestHandler<DeleteExcluirPedidoCommand, PedidoDTO>
+        IRequestHandler<DeleteExcluirPedidoCommand, PedidoDto>
     {
-        public async Task<PedidoDTO> Handle(
+        public async Task<PedidoDto> Handle(
             DeleteExcluirPedidoCommand request,
             CancellationToken cancellationToken)
         {

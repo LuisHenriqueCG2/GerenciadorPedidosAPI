@@ -1,11 +1,11 @@
-﻿using GerenciadorPedidos.Application.DTOs;
+﻿using GerenciadorPedidos.Application.Dtos;
 using GerenciadorPedidos.Application.Interfaces;
 using GerenciadorPedidos.Application.Pedidos.Queries;
 using MediatR;
 
 namespace GerenciadorPedidos.Application.Pedidos.Commands;
 
-public class PostAddProdutoPedidoCommand : IRequest<PedidoDTO>
+public class PostAddProdutoPedidoCommand : IRequest<PedidoDto>
 {
     public required int IdPedido { get; set; }
     public required int IdProduto { get; set; }
@@ -13,9 +13,9 @@ public class PostAddProdutoPedidoCommand : IRequest<PedidoDTO>
 }
 
 public class PostAddProdutoPedidoCommandHandler(IPedidoService pedidoService) :
-    IRequestHandler<PostAddProdutoPedidoCommand, PedidoDTO>
+    IRequestHandler<PostAddProdutoPedidoCommand, PedidoDto>
 {
-    public async Task<PedidoDTO> Handle(
+    public async Task<PedidoDto> Handle(
         PostAddProdutoPedidoCommand request,
         CancellationToken cancellationToken)
     {

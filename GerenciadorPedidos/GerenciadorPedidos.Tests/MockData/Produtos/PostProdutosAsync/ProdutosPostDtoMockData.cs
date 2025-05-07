@@ -1,27 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GerenciadorPedidos.Application.DTOs;
+﻿using GerenciadorPedidos.Application.Dtos;
 
-namespace GerenciadorPedidos.Tests.MockData.Produtos.PostProdutosAsync
+namespace GerenciadorPedidos.Tests.MockData.Produtos.PostProdutosAsync;
+
+public static class ProdutosPostDtoMockData
 {
-    public static class ProdutosPostDtoMockData
+    public static ProdutoDto PostProduto()
     {
-        public static ProdutoDTO PostProduto()
+        var fixedDate = new DateTime(2025, 05, 05);
+
+        return new ProdutoDto
         {
-            var fixedDate = new DateTime(2025, 05, 05);
-
-            return new ProdutoDTO
-            {
-                Id = 1,
-                Descricao = "Produto Post 1",
-                Quantidade = 10,
-                PrecoUnitario = 10,
-                DataCadastro = fixedDate
-            };
-        }
-
+            Id = 1,
+            Descricao = "Produto Post 1",
+            Quantidade = 10,
+            PrecoUnitario = 10,
+            DataCadastro = fixedDate
+        };
     }
 }

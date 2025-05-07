@@ -1,18 +1,18 @@
-﻿using GerenciadorPedidos.Application.DTOs;
+﻿using GerenciadorPedidos.Application.Dtos;
 using GerenciadorPedidos.Application.Interfaces;
 using MediatR;
 
 namespace GerenciadorPedidos.Application.Pedidos.Commands;
 
-public class PutCancelarPedidoCommand : IRequest<PedidoDTO>
+public class PutCancelarPedidoCommand : IRequest<PedidoDto>
 {
     public required int IdPedido { get; set; }
 }
 
 public class PutCancelarPedidoCommandHandler(IPedidoService pedidoService) :
-    IRequestHandler<PutCancelarPedidoCommand, PedidoDTO>
+    IRequestHandler<PutCancelarPedidoCommand, PedidoDto>
 {
-    public async Task<PedidoDTO> Handle(
+    public async Task<PedidoDto> Handle(
         PutCancelarPedidoCommand request,
         CancellationToken cancellationToken)
     {

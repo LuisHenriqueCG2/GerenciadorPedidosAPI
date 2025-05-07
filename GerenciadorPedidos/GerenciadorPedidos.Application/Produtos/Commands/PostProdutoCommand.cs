@@ -1,13 +1,10 @@
-﻿using AutoMapper;
-using GerenciadorPedidos.Application.DTOs;
+﻿using GerenciadorPedidos.Application.Dtos;
 using GerenciadorPedidos.Application.Interfaces;
-using GerenciadorPedidos.Domain.Entities;
-using GerenciadorPedidos.Domain.Interfaces;
 using MediatR;
 
 namespace GerenciadorPedidos.Application.Produtos.Commands;
 
-public class PostProdutoCommand : IRequest<ProdutoDTO>, IRequest<int>
+public class PostProdutoCommand : IRequest<ProdutoDto>, IRequest<int>
 {
     public required string Descricao { get;  set; }
     public required int Quantidade { get;  set; }
@@ -16,7 +13,7 @@ public class PostProdutoCommand : IRequest<ProdutoDTO>, IRequest<int>
     public required DateTime DataCadastro { get;  set; }
 }
 
-public class PostProdutoCommandHandler : IRequestHandler<PostProdutoCommand, ProdutoDTO>
+public class PostProdutoCommandHandler : IRequestHandler<PostProdutoCommand, ProdutoDto>
 {
     private readonly IProdutoService _produtoService;
 
@@ -25,9 +22,9 @@ public class PostProdutoCommandHandler : IRequestHandler<PostProdutoCommand, Pro
         _produtoService = produtoService;
     }
 
-    public async Task<ProdutoDTO> Handle(PostProdutoCommand request, CancellationToken cancellationToken)
+    public async Task<ProdutoDto> Handle(PostProdutoCommand request, CancellationToken cancellationToken)
     {
-        var novoProduto = new ProdutoDTO
+        var novoProduto = new ProdutoDto
         {
             Descricao = request.Descricao,
             DataCadastro = DateTime.Now,

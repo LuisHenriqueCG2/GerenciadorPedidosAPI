@@ -1,19 +1,18 @@
-﻿using GerenciadorPedidos.Application.DTOs;
+﻿using GerenciadorPedidos.Application.Dtos;
 using GerenciadorPedidos.Application.Interfaces;
-using GerenciadorPedidos.Application.Pedidos.Queries;
 using MediatR;
 
 namespace GerenciadorPedidos.Application.Produtos.Queries;
 
-public class GetProdutoIdQuery : IRequest<ProdutoDTO>
+public class GetProdutoIdQuery : IRequest<ProdutoDto>
 {
     public required int IdProduto { get; set; }
 }
 
 public class GetProdutoIdQueryHandler(IProdutoService produtoService) :
-    IRequestHandler<GetProdutoIdQuery, ProdutoDTO>
+    IRequestHandler<GetProdutoIdQuery, ProdutoDto>
 {
-    public async Task<ProdutoDTO> Handle(
+    public async Task<ProdutoDto> Handle(
         GetProdutoIdQuery request,
         CancellationToken cancellationToken)
     {

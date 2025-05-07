@@ -1,4 +1,3 @@
-using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace GerenciadorPedidos.Infra.Mediatr;
@@ -12,10 +11,7 @@ public static class MediatrDependency
             AppDomain.CurrentDomain.Load("GerenciadorPedidos.Application"),
         };
 
-        services.AddMediatR(cfg =>
-        {
-            cfg.RegisterServicesFromAssemblies(assemblies);
-        });
+        services.AddMediatR(cfg => { cfg.RegisterServicesFromAssemblies(assemblies); });
 
         return services;
     }

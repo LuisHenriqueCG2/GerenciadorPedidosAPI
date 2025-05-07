@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel;
-using GerenciadorPedidos.Application.DTOs;
+using GerenciadorPedidos.Application.Dtos;
 using GerenciadorPedidos.Application.Interfaces;
 using GerenciadorPedidos.Domain.Enums;
 using GerenciadorPedidos.Domain.Validations;
@@ -9,10 +9,10 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace GerenciadorPedidos.Application.Pedidos.Queries;
 
-public class GetPedidoQuery : IRequest<IEnumerable<PedidoDTO>>
+public class GetPedidoQuery : IRequest<IEnumerable<PedidoDto>>
 {
     [SwaggerParameter(Description = "Legenda: 1 - Aberto; 2 - Fechado; 3 - Cancelado; 4 - Faturado")]
-    public StatusPedido? StatusPedido { get; set; }
+    public StatusPedidoEnum? StatusPedido { get; set; }
 
     [SwaggerParameter(Description = "Número da página.")]
     public int PageNumber { get; set; } = 1;
@@ -22,9 +22,9 @@ public class GetPedidoQuery : IRequest<IEnumerable<PedidoDTO>>
 }
 
 public class GetPedidoQueryHandler(IPedidoService pedidoService) :
-    IRequestHandler<GetPedidoQuery, IEnumerable<PedidoDTO>>
+    IRequestHandler<GetPedidoQuery, IEnumerable<PedidoDto>>
 {
-    public async Task<IEnumerable<PedidoDTO>> Handle(GetPedidoQuery request, CancellationToken cancellationToken)
+    public async Task<IEnumerable<PedidoDto>> Handle(GetPedidoQuery request, CancellationToken cancellationToken)
     {
         var pedidos = await pedidoService.ListarTodosAsync(
             request.StatusPedido, 

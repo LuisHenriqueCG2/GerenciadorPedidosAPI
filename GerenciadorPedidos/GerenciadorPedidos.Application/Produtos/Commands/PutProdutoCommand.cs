@@ -1,19 +1,18 @@
-﻿using GerenciadorPedidos.Application.DTOs;
+﻿using GerenciadorPedidos.Application.Dtos;
 using GerenciadorPedidos.Application.Interfaces;
 using MediatR;
-using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace GerenciadorPedidos.Application.Produtos.Commands;
 
-public class PutProdutoCommand : IRequest<ProdutoDTO>, IRequest<int>
+public class PutProdutoCommand : IRequest<ProdutoDto>, IRequest<int>
 {
-    public  required int Id { get; set; }
-    public required string Descricao { get;  set; }
-    public required int Quantidade { get;  set; }
-    public required decimal PrecoUnitario { get;  set; }
+    public required int Id { get; set; }
+    public required string Descricao { get; set; }
+    public required int Quantidade { get; set; }
+    public required decimal PrecoUnitario { get; set; }
 }
 
-public class PutProdutoCommandHandler : IRequestHandler<PutProdutoCommand, ProdutoDTO>
+public class PutProdutoCommandHandler : IRequestHandler<PutProdutoCommand, ProdutoDto>
 {
     private readonly IProdutoService _produtoService;
 
@@ -22,9 +21,9 @@ public class PutProdutoCommandHandler : IRequestHandler<PutProdutoCommand, Produ
         _produtoService = produtoService;
     }
 
-    public async Task<ProdutoDTO> Handle(PutProdutoCommand request, CancellationToken cancellationToken)
+    public async Task<ProdutoDto> Handle(PutProdutoCommand request, CancellationToken cancellationToken)
     {
-        var alterarProduto = new ProdutoDTO
+        var alterarProduto = new ProdutoDto
         {
             Id = request.Id,
             Descricao = request.Descricao,

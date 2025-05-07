@@ -1,34 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using GerenciadorPedidos.Application.DTOs;
+﻿using GerenciadorPedidos.Application.Dtos;
 
-namespace GerenciadorPedidos.Tests.MockData.Produto.GetProdutosAsync
+namespace GerenciadorPedidos.Tests.MockData.Produto.GetProdutosAsync;
+
+public static class ProdutosGetDtoMockData
 {
-    public static class ProdutosGetDtoMockData
+    public static List<ProdutoDto> GetProdutos()
     {
-        public static List<ProdutoDTO> GetProdutos()
-        {
-            var fixedDate = new DateTime(2025, 05, 05);
+        var fixedDate = new DateTime(2025, 05, 05);
 
-            return new List<ProdutoDTO>
+        return new List<ProdutoDto>
+        {
+            new ProdutoDto
             {
-                new ProdutoDTO
-                {
-                    Id = 1,
-                    Descricao = "DTO 1",
-                    Quantidade = 10,
-                    PrecoUnitario = 10,
-                    DataCadastro = fixedDate
-                },
-                new ProdutoDTO
-                {
-                    Id = 2,
-                    Descricao = "DTO 2",
-                    Quantidade = 20,
-                    PrecoUnitario = 20,
-                    DataCadastro = fixedDate
-                }
-            };
-        }
+                Id = 1,
+                Descricao = "DTO 1",
+                Quantidade = 10,
+                PrecoUnitario = 10,
+                DataCadastro = fixedDate
+            },
+            new ProdutoDto
+            {
+                Id = 2,
+                Descricao = "DTO 2",
+                Quantidade = 20,
+                PrecoUnitario = 20,
+                DataCadastro = fixedDate
+            }
+        };
     }
 }

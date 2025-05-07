@@ -17,7 +17,7 @@ namespace GerenciadorPedidos.Domain.Interfaces
         Task<Pedido> CancelarPedido(int id);
         Task<Pedido> ExcluirPedido(int id);
         Task<Pedido> ListarPedidoPorID(int id);
-        Task<IEnumerable<Pedido>> ListarTodos(StatusPedido? status, int pageNumber, int pageSize);
+        Task<IEnumerable<Pedido>> ListarTodos(StatusPedidoEnum? status, int pageNumber, int pageSize);
         Task<bool> SaveAllAsync();
     }
 }

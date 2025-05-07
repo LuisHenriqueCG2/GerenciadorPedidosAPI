@@ -1,81 +1,60 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
-using GerenciadorPedidos.Application.DTOs;
+﻿using AutoMapper;
+using GerenciadorPedidos.Application.Dtos;
 using GerenciadorPedidos.Application.Interfaces;
 using GerenciadorPedidos.Domain.Entities;
-using GerenciadorPedidos.Domain.Enums;
 using GerenciadorPedidos.Domain.Interfaces;
 
-namespace GerenciadorPedidos.Application.Services
+public class ProdutoService(IProdutoRepository repository, IMapper mapper) : IProdutoService
 {
-    public class ProdutoService : IProdutoService
+    public async Task<ProdutoDto> AdicionarProduto(ProdutoDto produtoDto)
     {
-        private readonly IProdutoRepository _repository;
-        private readonly IMapper _mapper;
+        produtoDto.DataCadastro = DateTime.Now;
+        var produto = mapper.Map<Produto>(produtoDto);
+        var produtoIncluido = await repository.AdicionarProduto(produto);
+        return mapper.Map<ProdutoDto>(produtoIncluido);
+    }
 
-        public ProdutoService(IProdutoRepository repository, IMapper mapper)
+    public async Task<ProdutoDto> AlterarProduto(ProdutoDto produtoDto)
+    {
+        var produtoExistente = await repository.ListarProdutoPorID(produtoDto.Id);
+        if (produtoExistente == null)
         {
-            _repository = repository;
-            _mapper = mapper;
+            throw new KeyNotFoundException("Produto não encontrado.");
         }
 
-        public async Task<ProdutoDTO> AdicionarProduto(ProdutoDTO produtoDTO)
+        mapper.Map(produtoDto, produtoExistente);
+
+        var produtoAlterado = await repository.AlterarProduto(produtoExistente);
+        return mapper.Map<ProdutoDto>(produtoAlterado);
+    }
+
+    public async Task<ProdutoDto> ExcluirProduto(int id)
+    {
+        var produto = await repository.ListarProdutoPorID(id);
+        if (produto == null)
         {
-            produtoDTO.DataCadastro = DateTime.Now;
-            var produto = _mapper.Map<Produto>(produtoDTO);
-            var produtoIncluido = await _repository.AdicionarProduto(produto);
-            return _mapper.Map<ProdutoDTO>(produtoIncluido);
+            throw new Exception("Produto não foi encontrado!");
         }
 
-        public async Task<ProdutoDTO> AlterarProduto(ProdutoDTO produtoDTO)
-        {
-            var produtoExistente = await _repository.ListarProdutoPorID(produtoDTO.Id);
-            if (produtoExistente == null)
-            {
-                throw new KeyNotFoundException("Produto não encontrado.");
-            }
-                
-            _mapper.Map(produtoDTO, produtoExistente);
+        var produtoExcluido = await repository.ExcluirProduto(id);
+        return mapper.Map<ProdutoDto>(produtoExcluido);
+    }
 
-            var produtoAlterado = await _repository.AlterarProduto(produtoExistente);
-            return _mapper.Map<ProdutoDTO>(produtoAlterado);
+    public async Task<ProdutoDto> ListarPorId(int id)
+    {
+        var produto = await repository.ListarProdutoPorID(id);
+        if (produto == null)
+        {
+            throw new Exception("Produto não foi encontrado!");
         }
 
+        return mapper.Map<ProdutoDto>(produto);
+    }
 
+    public async Task<IEnumerable<ProdutoDto>> ListarTodosAsync(int pageNumber, int pageSize)
+    {
+        var produtos = await repository.ListarTodos(pageNumber, pageSize);
 
-        public async Task<ProdutoDTO> ExcluirProduto(int id)
-        {
-            var produto = await _repository.ListarProdutoPorID(id);
-            if (produto == null)
-            {
-                throw new Exception("Produto não foi encontrado!");
-            }
-            var produtoExcluido = await _repository.ExcluirProduto(id);
-            return _mapper.Map<ProdutoDTO>(produtoExcluido);
-        }
-
-
-
-        public async Task<ProdutoDTO> ListarPorId(int id)
-        {
-            var produto = await _repository.ListarProdutoPorID(id);
-            if (produto == null)
-            {
-                throw new Exception("Produto não foi encontrado!");
-            }
-            return _mapper.Map<ProdutoDTO>(produto);
-        }
-
-        public async Task<IEnumerable<ProdutoDTO>> ListarTodosAsync(int pageNumber, int pageSize)
-        {
-            var produtos = await _repository.ListarTodos(pageNumber, pageSize);
-            
-            return _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
-            
-        }
+        return mapper.Map<IEnumerable<ProdutoDto>>(produtos);
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GerenciadorPedidos.Domain.Enums
 {
-    public enum StatusPedido
+    public enum StatusPedidoEnum
     {
         Aberto = 1,
         Fechado = 2,

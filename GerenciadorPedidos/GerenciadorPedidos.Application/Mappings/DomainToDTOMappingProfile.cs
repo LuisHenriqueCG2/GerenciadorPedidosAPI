@@ -1,36 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using AutoMapper;
-using System.Threading.Tasks;
-using GerenciadorPedidos.Application.DTOs;
+﻿using AutoMapper;
+using GerenciadorPedidos.Application.Dtos;
 using GerenciadorPedidos.Domain.Entities;
 
-namespace GerenciadorPedidos.Application.Mappings
+namespace GerenciadorPedidos.Application.Mappings;
+
+public class DomainToDtoMappingProfile : Profile
 {
-    public class DomainToDTOMappingProfile : Profile
+    public DomainToDtoMappingProfile()
     {
-       public DomainToDTOMappingProfile() {
-            CreateMap<ProdutoDTO, Produto>().ReverseMap();
-            CreateMap<PedidoDTO, Pedido>().ReverseMap();
-            CreateMap<Produto, ProdutoDTO>().ReverseMap();
-            CreateMap<Pedido, PedidoDTO>()
-                .ForMember(dest => dest.Produtos, opt => opt.MapFrom(src => src.ItensPedido.Select(ip => ip.Produto)));
-            CreateMap<Produto, ProdutoDTO>();
-            CreateMap<ItemPedido, ProdutoDTO>()
-                .ConstructUsing(ip => new ProdutoDTO
-                {
-                    Id = ip.Produto.Id,
-                    Descricao = ip.Produto.Descricao,
-                    DataCadastro = ip.Produto.DataCadastro,
-                    PrecoUnitario = ip.Produto.PrecoUnitario,
-                    Quantidade = ip.Quantidade 
-                });
-            CreateMap<Pedido, PedidoDTO>()
-                .ForMember(dest => dest.Produtos, opt => opt.MapFrom(src => src.ItensPedido.Select(ip => ip.Produto)));
-
-
-        }
+        CreateMap<ProdutoDto, Produto>().ReverseMap();
+        CreateMap<PedidoDto, Pedido>().ReverseMap();
+        CreateMap<Produto, ProdutoDto>().ReverseMap();
+        CreateMap<Pedido, PedidoDto>()
+            .ForMember(dest => dest.Produtos, opt => opt.MapFrom(src => src.ItensPedido.Select(ip => ip.Produto)));
+        CreateMap<Produto, ProdutoDto>();
+        CreateMap<ItemPedido, ProdutoDto>()
+            .ConstructUsing(ip => new ProdutoDto
+            {
+                Id = ip.Produto.Id,
+                Descricao = ip.Produto.Descricao,
+                DataCadastro = ip.Produto.DataCadastro,
+                PrecoUnitario = ip.Produto.PrecoUnitario,
+                Quantidade = ip.Quantidade
+            });
+        CreateMap<Pedido, PedidoDto>()
+            .ForMember(dest => dest.Produtos, opt => opt.MapFrom(src => src.ItensPedido.Select(ip => ip.Produto)));
     }
 }

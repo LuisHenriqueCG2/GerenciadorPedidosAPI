@@ -1,15 +1,15 @@
-﻿using GerenciadorPedidos.Application.DTOs;
+﻿using GerenciadorPedidos.Application.Dtos;
 using GerenciadorPedidos.Application.Interfaces;
 using MediatR;
 
 namespace GerenciadorPedidos.Application.Pedidos.Commands;
 
-public class PostPedidoCommand : IRequest<PedidoDTO>
+public class PostPedidoCommand : IRequest<PedidoDto>
 {
     public required string Descricao { get; set; }
 }
 
-public class PostPedidoCommandHandler : IRequestHandler<PostPedidoCommand, PedidoDTO>
+public class PostPedidoCommandHandler : IRequestHandler<PostPedidoCommand, PedidoDto>
 {
     private readonly IPedidoService _pedidoService;
 
@@ -18,7 +18,7 @@ public class PostPedidoCommandHandler : IRequestHandler<PostPedidoCommand, Pedid
         _pedidoService = pedidoService;
     }
 
-    public async Task<PedidoDTO> Handle(PostPedidoCommand request, CancellationToken cancellationToken)
+    public async Task<PedidoDto> Handle(PostPedidoCommand request, CancellationToken cancellationToken)
     {
         var pedidoCriado = await _pedidoService.AdicionarPedido(request.Descricao);
     

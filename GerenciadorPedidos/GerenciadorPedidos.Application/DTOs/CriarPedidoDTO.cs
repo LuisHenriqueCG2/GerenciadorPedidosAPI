@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GerenciadorPedidos.Application.DTOs
+namespace GerenciadorPedidos.Application.Dtos
 {
-    public class CriarPedidoDTO
+    public class CriarPedidoDto
     {
-        public CriarPedidoDTO() {} 
+        public CriarPedidoDto() {} 
 
-        public CriarPedidoDTO(string descricaoPedido)
+        public CriarPedidoDto(string descricaoPedido)
         {
             DescricaoPedido = descricaoPedido;
         }

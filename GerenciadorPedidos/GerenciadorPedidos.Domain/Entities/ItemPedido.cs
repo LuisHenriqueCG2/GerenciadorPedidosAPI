@@ -1,8 +1,8 @@
-﻿using GerenciadorPedidos.Domain.Entities;
+﻿namespace GerenciadorPedidos.Domain.Entities;
 
 public class ItemPedido
 {
-    public int PedidoId { get; set; } 
+    public int PedidoId { get; set; }
     public Pedido Pedido { get; set; }
 
     public int ProdutoId { get; set; }
@@ -13,7 +13,7 @@ public class ItemPedido
 
     public ItemPedido(int pedidoId, int produtoId, int quantidade, decimal valorTotal)
     {
-        PedidoId = pedidoId;  
+        PedidoId = pedidoId;
         ProdutoId = produtoId;
         Quantidade = quantidade;
         ValorTotal = valorTotal;

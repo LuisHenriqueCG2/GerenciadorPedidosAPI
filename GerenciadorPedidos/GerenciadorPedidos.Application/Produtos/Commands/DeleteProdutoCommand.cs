@@ -1,19 +1,18 @@
-﻿using GerenciadorPedidos.Application.DTOs;
+﻿using GerenciadorPedidos.Application.Dtos;
 using GerenciadorPedidos.Application.Interfaces;
-using GerenciadorPedidos.Application.Produtos.Queries;
 using MediatR;
 
 namespace GerenciadorPedidos.Application.Produtos.Commands;
 
-public class DeleteProdutoCommand : IRequest<ProdutoDTO>
+public class DeleteProdutoCommand : IRequest<ProdutoDto>
 {
     public required int IdProduto { get; set; }
 }
 
 public class DeleteProdutoCommandHandler(IProdutoService produtoService) :
-    IRequestHandler<DeleteProdutoCommand, ProdutoDTO>
+    IRequestHandler<DeleteProdutoCommand, ProdutoDto>
 {
-    public async Task<ProdutoDTO> Handle(
+    public async Task<ProdutoDto> Handle(
         DeleteProdutoCommand request,
         CancellationToken cancellationToken)
     {
