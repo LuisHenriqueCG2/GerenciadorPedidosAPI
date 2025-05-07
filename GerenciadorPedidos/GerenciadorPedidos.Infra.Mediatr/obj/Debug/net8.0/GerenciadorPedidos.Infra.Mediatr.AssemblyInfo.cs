@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciadorPedidos.Infra.Mediatr")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c21dfaba57c0d0f8a2c5133f74bce0d84b52e973")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7735169f3ebc1cb73806a1344936d230c34451d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("GerenciadorPedidos.Infra.Mediatr")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GerenciadorPedidos.Infra.Mediatr")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
