@@ -37,3 +37,16 @@ D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\Gere
 D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\refint\GerenciadorPedidos.Infra.Mediatr.dll
 D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.pdb
 D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\ref\GerenciadorPedidos.Infra.Mediatr.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\bin\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.deps.json
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\bin\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\bin\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.pdb
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.csproj.AssemblyReference.cache
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.AssemblyInfoInputs.cache
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.AssemblyInfo.cs
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.csproj.CoreCompileInputs.cache
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.sourcelink.json
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\refint\GerenciadorPedidos.Infra.Mediatr.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\GerenciadorPedidos.Infra.Mediatr.pdb
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Mediatr\obj\Debug\net8.0\ref\GerenciadorPedidos.Infra.Mediatr.dll

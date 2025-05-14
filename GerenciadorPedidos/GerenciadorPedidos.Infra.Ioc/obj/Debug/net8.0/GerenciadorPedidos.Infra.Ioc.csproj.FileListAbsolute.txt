@@ -97,3 +97,23 @@ D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\Gere
 D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\refint\GerenciadorPedidos.Infra.Ioc.dll
 D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.pdb
 D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\ref\GerenciadorPedidos.Infra.Ioc.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.deps.json
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.pdb
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Application.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Domain.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Application.pdb
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Domain.pdb
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\bin\Debug\net8.0\GerenciadorPedidos.Infra.Data.pdb
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.csproj.AssemblyReference.cache
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.AssemblyInfoInputs.cache
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.AssemblyInfo.cs
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.csproj.CoreCompileInputs.cache
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.sourcelink.json
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\Gerencia.C0683062.Up2Date
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\refint\GerenciadorPedidos.Infra.Ioc.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\GerenciadorPedidos.Infra.Ioc.pdb
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Infra.Ioc\obj\Debug\net8.0\ref\GerenciadorPedidos.Infra.Ioc.dll

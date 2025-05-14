@@ -6,7 +6,8 @@ public class Pedido
 {
     public int Id { get; private set; }
     public string DescricaoPedido { get; set; }
-    public StatusPedidoEnum StatusPedidoEnum { get; set; }
+    
+    public StatusPedidoEnum StatusPedido { get; set; }
     public DateTime DataAbertura { get; set; }
     public DateTime? DataFechamento { get; set; }
     public DateTime? DataCancelamento { get; set; }
@@ -15,7 +16,7 @@ public class Pedido
 
     public Pedido()
     {
-        StatusPedidoEnum = StatusPedidoEnum.Aberto;
+        StatusPedido = StatusPedidoEnum.Aberto;
         DataAbertura = DateTime.UtcNow;
         DataFechamento = null;
         DataCancelamento = null;
@@ -24,7 +25,7 @@ public class Pedido
 
     public void AdicionarProduto(Produto produto, int quantidade)
     {
-        if (StatusPedidoEnum != StatusPedidoEnum.Aberto)
+        if (StatusPedido != StatusPedidoEnum.Aberto)
             throw new InvalidOperationException(
                 "Não é possível adicionar produtos a um pedido fechado, cancelado ou faturado.");
 
@@ -43,7 +44,7 @@ public class Pedido
 
     public void RemoverProduto(Produto produto)
     {
-        if (StatusPedidoEnum != StatusPedidoEnum.Aberto)
+        if (StatusPedido != StatusPedidoEnum.Aberto)
             throw new InvalidOperationException(
                 "Não é possível remover produtos de um pedido fechado, cancelado ou faturado.");
 
@@ -56,22 +57,22 @@ public class Pedido
 
     public void FecharPedido()
     {
-        if (StatusPedidoEnum != StatusPedidoEnum.Aberto)
+        if (StatusPedido != StatusPedidoEnum.Aberto)
             throw new InvalidOperationException("O pedido já está fechado ou cancelado.");
 
         if (ItensPedido == null || !ItensPedido.Any())
             throw new InvalidOperationException("Não é possível fechar um pedido sem produtos.");
 
-        StatusPedidoEnum = StatusPedidoEnum.Fechado;
+        StatusPedido = StatusPedidoEnum.Fechado;
         DataFechamento = DateTime.UtcNow;
     }
 
     public void CancelarPedido()
     {
-        if (StatusPedidoEnum == StatusPedidoEnum.Fechado)
+        if (StatusPedido == StatusPedidoEnum.Fechado)
             throw new InvalidOperationException("Não é possível cancelar um pedido já fechado.");
 
-        StatusPedidoEnum = StatusPedidoEnum.Cancelado;
+        StatusPedido = StatusPedidoEnum.Cancelado;
         DataCancelamento = DateTime.UtcNow;
     }
 }

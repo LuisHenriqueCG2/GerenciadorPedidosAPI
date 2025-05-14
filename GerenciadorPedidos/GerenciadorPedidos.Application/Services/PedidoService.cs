@@ -19,7 +19,7 @@ public class PedidoService(
         var novoPedido = new Pedido
         {
             DescricaoPedido = descricaoPedido,
-            StatusPedidoEnum = StatusPedidoEnum.Aberto,
+            StatusPedido = StatusPedidoEnum.Aberto,
             DataAbertura = DateTime.Now,
             DataFechamento = null,
             DataCancelamento = null,
@@ -47,7 +47,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedidoEnum,
+            StatusPedidoEnum = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             Produtos = pedido.ItensPedido.Select(ip => new ProdutoDto
             {
@@ -66,12 +66,12 @@ public class PedidoService(
         var pedido = await repository.ListarPedidoPorID(pedidoId);
         if (pedido == null) throw new NotFoundException("Pedido não encontrado");
 
-        if (pedido.StatusPedidoEnum == StatusPedidoEnum.Faturado || pedido.StatusPedidoEnum == StatusPedidoEnum.Cancelado)
+        if (pedido.StatusPedido == StatusPedidoEnum.Faturado || pedido.StatusPedido == StatusPedidoEnum.Cancelado)
         {
             throw new Exception("Não é possível cancelar um pediudo Faturado ou Cancelado!");
         }
 
-        pedido.StatusPedidoEnum = StatusPedidoEnum.Cancelado;
+        pedido.StatusPedido = StatusPedidoEnum.Cancelado;
         pedido.DataCancelamento = DateTime.Now;
 
         await repository.CancelarPedido(pedidoId);
@@ -80,7 +80,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedidoEnum,
+            StatusPedidoEnum = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             DataFaturamento = pedido.DataFaturamento,
             DataFechamento = pedido.DataFechamento,
@@ -108,7 +108,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedidoEnum,
+            StatusPedidoEnum = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             DataFaturamento = pedido.DataFaturamento,
             DataFechamento = pedido.DataFechamento,
@@ -130,22 +130,22 @@ public class PedidoService(
         var pedido = await repository.ListarPedidoPorID(pedidoId);
         if (pedido == null) throw new NotFoundException("Pedido não encontrado");
 
-        if (pedido.StatusPedidoEnum == StatusPedidoEnum.Aberto)
+        if (pedido.StatusPedido == StatusPedidoEnum.Aberto)
         {
             throw new Exception("O pedido está aberto. Feche primeiro antes de faturar!");
         }
 
-        if (pedido.StatusPedidoEnum == StatusPedidoEnum.Cancelado)
+        if (pedido.StatusPedido == StatusPedidoEnum.Cancelado)
         {
             throw new Exception("O pedido está cancelado. Não é possível faturar!");
         }
 
-        if (pedido.StatusPedidoEnum == StatusPedidoEnum.Faturado)
+        if (pedido.StatusPedido == StatusPedidoEnum.Faturado)
         {
             throw new Exception("O pedido já está faturado!");
         }
 
-        pedido.StatusPedidoEnum = StatusPedidoEnum.Faturado;
+        pedido.StatusPedido = StatusPedidoEnum.Faturado;
         pedido.DataFaturamento = DateTime.Now;
 
         await repository.FaturarPedido(pedidoId);
@@ -154,7 +154,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedidoEnum,
+            StatusPedidoEnum = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             DataFaturamento = pedido.DataFaturamento,
             DataFechamento = pedido.DataFechamento,
@@ -200,7 +200,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedidoEnum,
+            StatusPedidoEnum = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             Produtos = pedido.ItensPedido.Select(ip => new ProdutoDto
             {
@@ -219,12 +219,12 @@ public class PedidoService(
         var pedido = await repository.ListarPedidoPorID(pedidoId);
         if (pedido == null) throw new NotFoundException("Pedido não encontrado");
 
-        if (pedido.StatusPedidoEnum != StatusPedidoEnum.Aberto)
+        if (pedido.StatusPedido != StatusPedidoEnum.Aberto)
         {
             throw new Exception("O pedido precisa estar aberto para ser fechado!");
         }
 
-        pedido.StatusPedidoEnum = StatusPedidoEnum.Fechado;
+        pedido.StatusPedido = StatusPedidoEnum.Fechado;
         pedido.DataFechamento = DateTime.Now;
 
         await repository.FecharPedido(pedidoId);
@@ -233,7 +233,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedidoEnum,
+            StatusPedidoEnum = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             DataFaturamento = pedido.DataFaturamento,
             DataFechamento = pedido.DataFechamento,

@@ -14,6 +14,6 @@ public class PedidoConfiguration : IEntityTypeConfiguration<Pedido>
         builder.Property(e => e.DataFechamento).HasColumnType("datetime");
         builder.Property(e => e.DataCancelamento).HasColumnType("datetime");
         builder.Property(e => e.DataFaturamento).HasColumnType("datetime");
-        builder.Property(e => e.StatusPedidoEnum).HasMaxLength(10).IsRequired();
+        builder.Property(e => e.StatusPedido).HasMaxLength(10).IsRequired();
     }
 }

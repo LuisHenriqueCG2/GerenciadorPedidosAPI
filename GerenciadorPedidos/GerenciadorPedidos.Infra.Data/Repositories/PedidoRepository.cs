@@ -27,7 +27,7 @@ public class PedidoRepository(ApplicationDbContext context) : IPedidoRepository
             throw new Exception("Pedido não encontrado");
 
         pedidoExistente.DescricaoPedido = pedidoAtualizado.DescricaoPedido;
-        pedidoExistente.StatusPedidoEnum = pedidoAtualizado.StatusPedidoEnum;
+        pedidoExistente.StatusPedido = pedidoAtualizado.StatusPedido;
 
         var itensAtualizados = pedidoAtualizado.ItensPedido.ToList();
         var itensRemovidos = pedidoExistente.ItensPedido
@@ -60,7 +60,7 @@ public class PedidoRepository(ApplicationDbContext context) : IPedidoRepository
 
         if (pedido == null) throw new Exception("Pedido não encontrado");
 
-        pedido.StatusPedidoEnum = StatusPedidoEnum.Cancelado;
+        pedido.StatusPedido = StatusPedidoEnum.Cancelado;
         pedido.DataCancelamento = DateTime.Now;
 
         await context.SaveChangesAsync();
@@ -92,7 +92,7 @@ public class PedidoRepository(ApplicationDbContext context) : IPedidoRepository
             throw new InvalidOperationException("O pedido precisa ter pelo menos um produto para ser faturado.");
         }
 
-        pedido.StatusPedidoEnum = StatusPedidoEnum.Faturado;
+        pedido.StatusPedido = StatusPedidoEnum.Faturado;
         pedido.DataFaturamento = DateTime.Now;
 
         await context.SaveChangesAsync();
@@ -114,7 +114,7 @@ public class PedidoRepository(ApplicationDbContext context) : IPedidoRepository
             throw new InvalidOperationException("O pedido precisa ter pelo menos um produto para ser fechado.");
         }
 
-        pedido.StatusPedidoEnum = StatusPedidoEnum.Fechado;
+        pedido.StatusPedido = StatusPedidoEnum.Fechado;
         pedido.DataFechamento = DateTime.Now;
 
         await context.SaveChangesAsync();
@@ -147,7 +147,7 @@ public class PedidoRepository(ApplicationDbContext context) : IPedidoRepository
 
         if (status.HasValue)
         {
-            query = query.Where(p => p.StatusPedidoEnum == status.Value);
+            query = query.Where(p => p.StatusPedido == status.Value);
         }
 
         return await query

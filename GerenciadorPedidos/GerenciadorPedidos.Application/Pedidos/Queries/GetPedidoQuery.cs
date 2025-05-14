@@ -4,6 +4,7 @@ using GerenciadorPedidos.Application.Interfaces;
 using GerenciadorPedidos.Domain.Enums;
 using GerenciadorPedidos.Domain.Validations;
 using MediatR;
+using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -27,10 +28,11 @@ public class GetPedidoQueryHandler(IPedidoService pedidoService) :
     public async Task<IEnumerable<PedidoDto>> Handle(GetPedidoQuery request, CancellationToken cancellationToken)
     {
         var pedidos = await pedidoService.ListarTodosAsync(
-            request.StatusPedido, 
-            request.PageNumber, 
+            request.StatusPedido,
+            request.PageNumber,
             request.PageSize);
 
         return pedidos;
     }
 }
+

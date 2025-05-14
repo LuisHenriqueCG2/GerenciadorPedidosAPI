@@ -62,3 +62,16 @@ D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\Gere
 D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\refint\GerenciadorPedidos.Domain.dll
 D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.pdb
 D:\Projeto Gerenciador Pedidos API\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\ref\GerenciadorPedidos.Domain.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\bin\Debug\net8.0\GerenciadorPedidos.Domain.deps.json
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\bin\Debug\net8.0\GerenciadorPedidos.Domain.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\bin\Debug\net8.0\GerenciadorPedidos.Domain.pdb
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.csproj.AssemblyReference.cache
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.AssemblyInfoInputs.cache
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.AssemblyInfo.cs
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.sourcelink.json
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\refint\GerenciadorPedidos.Domain.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\GerenciadorPedidos.Domain.pdb
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos.Domain\obj\Debug\net8.0\ref\GerenciadorPedidos.Domain.dll
