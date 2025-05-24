@@ -34,8 +34,8 @@ public class PedidosController(ISender sender) : ControllerBase
     [HttpPut("RemoverProduto")]
     [SwaggerOperation(
         Summary = "Remove um produto do pedido",
-        Description = "Recebe o ID do pedido, ID do produto e a Quantidade para a inclusão no pedido e retorna o " +
-                      "pedido criado com informações adicionais.")]
+        Description = "Recebe o ID do pedido, ID do produto para a remoção do produto no pedido e retorna " +
+                      "informações adicionais.")]
     public async Task<IActionResult> PutRemoveProdutoTaskAsync([FromQuery] PutRemoveProdutoCommand query)
     {
         return Ok(await sender.Send(query));
