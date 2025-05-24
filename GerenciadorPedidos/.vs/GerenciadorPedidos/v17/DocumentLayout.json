@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|solutionrelative:gerenciadorpedidos\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos.application\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|solutionrelative:gerenciadorpedidos.application\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos.application\\dtos\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|solutionrelative:gerenciadorpedidos.application\\dtos\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos.application\\pedidos\\queries\\getpedidoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|solutionrelative:gerenciadorpedidos.application\\pedidos\\queries\\getpedidoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|solutionrelative:gerenciadorpedidos\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos.application\\produtos\\queries\\getprodutoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|solutionrelative:gerenciadorpedidos.application\\produtos\\queries\\getprodutoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FB8277C-D78C-49A5-87AB-8947CD125B81}|GerenciadorPedidos\\GerenciadorPedidos.API.csproj|solutionrelative:gerenciadorpedidos\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos.application\\pedidos\\queries\\getpedidoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|solutionrelative:gerenciadorpedidos.application\\pedidos\\queries\\getpedidoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos.application\\produtos\\queries\\getprodutoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|solutionrelative:gerenciadorpedidos.application\\produtos\\queries\\getprodutoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAAE4E27-B4CD-4872-9409-3BA94B82C3EC}|GerenciadorPedidos.Infra.Data\\GerenciadorPedidos.Infra.Data.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos.infra.data\\repositories\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DED4B2CC-87B7-42CB-80F5-81A6C74D434C}|GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos.domain\\interfaces\\ipedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DED4B2CC-87B7-42CB-80F5-81A6C74D434C}|GerenciadorPedidos.Domain\\GerenciadorPedidos.Domain.csproj|solutionrelative:gerenciadorpedidos.domain\\interfaces\\ipedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos.application\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|solutionrelative:gerenciadorpedidos.application\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{788B8CCF-D8A3-4DAE-83CA-03C61E41F83C}|GerenciadorPedidos.Application\\GerenciadorPedidos.Application.csproj|d:\\projetos\\projetos\\gerenciadorpedidosapi\\gerenciadorpedidos\\gerenciadorpedidos.application\\produtos\\commands\\deleteprodutocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,7 +101,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -105,32 +109,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetProdutoQuery.cs",
-              "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Produtos\\Queries\\GetProdutoQuery.cs",
-              "RelativeDocumentMoniker": "GerenciadorPedidos.Application\\Produtos\\Queries\\GetProdutoQuery.cs",
-              "ToolTip": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Produtos\\Queries\\GetProdutoQuery.cs",
-              "RelativeToolTip": "GerenciadorPedidos.Application\\Produtos\\Queries\\GetProdutoQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PedidoDTO.cs",
+              "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\DTOs\\PedidoDTO.cs",
+              "RelativeDocumentMoniker": "GerenciadorPedidos.Application\\DTOs\\PedidoDTO.cs",
+              "ToolTip": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\DTOs\\PedidoDTO.cs",
+              "RelativeToolTip": "GerenciadorPedidos.Application\\DTOs\\PedidoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T00:29:00.276Z"
+              "WhenOpened": "2025-05-24T02:43:40.155Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ProdutoController.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos\\Controllers\\ProdutoController.cs",
               "ToolTip": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "GerenciadorPedidos\\Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T00:28:55.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "DeleteProdutoCommand.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Produtos\\Commands\\DeleteProdutoCommand.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Application\\Produtos\\Commands\\DeleteProdutoCommand.cs",
@@ -142,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "DomainToDTOMappingProfile.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Mappings\\DomainToDTOMappingProfile.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Application\\Mappings\\DomainToDTOMappingProfile.cs",
@@ -154,19 +159,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "PedidoService.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Services\\PedidoService.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Application\\Services\\PedidoService.cs",
               "ToolTip": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Services\\PedidoService.cs",
               "RelativeToolTip": "GerenciadorPedidos.Application\\Services\\PedidoService.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAcwCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALsAAAAAAAAAAAAMwNEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T18:26:51.474Z"
+              "WhenOpened": "2025-05-06T18:26:51.474Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ProdutosController.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\Controllers\\ProdutosController.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Tests\\Controllers\\ProdutosController.cs",
@@ -178,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DomainExceptionValidation.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\Validations\\DomainExceptionValidation.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Domain\\Validations\\DomainExceptionValidation.cs",
@@ -190,31 +196,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PedidosController.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos\\Controllers\\PedidosController.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos\\Controllers\\PedidosController.cs",
               "ToolTip": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos\\Controllers\\PedidosController.cs",
               "RelativeToolTip": "GerenciadorPedidos\\Controllers\\PedidosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAA8wF4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T21:26:03.263Z"
+              "WhenOpened": "2025-05-05T21:26:03.263Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "GetPedidoQuery.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Pedidos\\Queries\\GetPedidoQuery.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Application\\Pedidos\\Queries\\GetPedidoQuery.cs",
               "ToolTip": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Pedidos\\Queries\\GetPedidoQuery.cs",
               "RelativeToolTip": "GerenciadorPedidos.Application\\Pedidos\\Queries\\GetPedidoQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T00:29:09.531Z"
+              "WhenOpened": "2025-05-07T00:29:09.531Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "GetProdutoQuery.cs",
+              "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Produtos\\Queries\\GetProdutoQuery.cs",
+              "RelativeDocumentMoniker": "GerenciadorPedidos.Application\\Produtos\\Queries\\GetProdutoQuery.cs",
+              "ToolTip": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Application\\Produtos\\Queries\\GetProdutoQuery.cs",
+              "RelativeToolTip": "GerenciadorPedidos.Application\\Produtos\\Queries\\GetProdutoQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T00:29:00.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\Validations\\NotFoundException.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Domain\\Validations\\NotFoundException.cs",
@@ -226,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "PedidoRepository.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\Repositories\\PedidoRepository.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Data\\Repositories\\PedidoRepository.cs",
@@ -238,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "IPedidoRepository.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\Interfaces\\IPedidoRepository.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Domain\\Interfaces\\IPedidoRepository.cs",
@@ -250,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "TestProdutoController.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\Controllers\\TestProdutoController.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Tests\\Controllers\\TestProdutoController.cs",
@@ -258,11 +278,12 @@
               "RelativeToolTip": "GerenciadorPedidos.Tests\\Controllers\\TestProdutoController.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T18:24:26.767Z"
+              "WhenOpened": "2025-05-06T18:24:26.767Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ProdutosGetDtoMockData.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\MockData\\Produtos\\GetProdutosAsync\\ProdutosGetDtoMockData.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Tests\\MockData\\Produtos\\GetProdutosAsync\\ProdutosGetDtoMockData.cs",
@@ -274,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "MediatrDependency.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Mediatr\\MediatrDependency.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Mediatr\\MediatrDependency.cs",
@@ -286,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "StatusPedido.cs",
               "DocumentMoniker": "D:\\Projeto Gerenciador Pedidos API\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\Enums\\StatusPedido.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Projeto Gerenciador Pedidos API\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Domain\\Enums\\StatusPedido.cs",
@@ -298,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "DependencyInjectionSwagger.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\DependencyInjectionSwagger.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Ioc\\DependencyInjectionSwagger.cs",
@@ -310,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "DependecyInjection.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Ioc\\DependecyInjection.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Ioc\\DependecyInjection.cs",
@@ -322,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ProdutosPostDtoMockData.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\MockData\\Produtos\\PostProdutosAsync\\ProdutosPostDtoMockData.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Tests\\MockData\\Produtos\\PostProdutosAsync\\ProdutosPostDtoMockData.cs",
@@ -334,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Data\\Context\\ApplicationDbContext.cs",
@@ -346,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ItemPedidoConfiguration.cs",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Infra.Data\\EntitiesConfiguration\\ItemPedidoConfiguration.cs",
               "RelativeDocumentMoniker": "GerenciadorPedidos.Infra.Data\\EntitiesConfiguration\\ItemPedidoConfiguration.cs",
@@ -358,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos\\appsettings.json",
               "RelativeDocumentMoniker": "GerenciadorPedidos\\appsettings.json",

@@ -73,7 +73,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "GerenciadorPedidos.Application.DTOs.PedidoDTO",
+        "Type": "GerenciadorPedidos.Application.Dtos.PedidoDto",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -1125,3 +1125,4 @@ D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos
 D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos\obj\Debug\net8.0\GerenciadorPedidos.API.pdb
 D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos\obj\Debug\net8.0\GerenciadorPedidos.API.genruntimeconfig.cache
 D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos\obj\Debug\net8.0\ref\GerenciadorPedidos.API.dll
+D:\Projetos\Projetos\GerenciadorPedidosAPI\GerenciadorPedidos\GerenciadorPedidos\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

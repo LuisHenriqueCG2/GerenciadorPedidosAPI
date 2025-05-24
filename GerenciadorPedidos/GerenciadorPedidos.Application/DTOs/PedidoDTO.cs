@@ -11,7 +11,7 @@ public class PedidoDto
     [Required(ErrorMessage = "O campo descrição é obrigatório!")]
     public string DescricaoPedido { get; set; }
 
-    public StatusPedidoEnum StatusPedidoEnum { get; set; }
+    public StatusPedidoEnum StatusPedido { get; set; }
     public DateTime DataAbertura { get; set; }
     public DateTime? DataFechamento { get; set; }
     public DateTime? DataCancelamento { get; set; }

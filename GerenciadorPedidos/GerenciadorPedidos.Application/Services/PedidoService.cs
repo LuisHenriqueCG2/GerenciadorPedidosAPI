@@ -47,7 +47,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedido,
+            StatusPedido = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             Produtos = pedido.ItensPedido.Select(ip => new ProdutoDto
             {
@@ -80,7 +80,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedido,
+            StatusPedido = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             DataFaturamento = pedido.DataFaturamento,
             DataFechamento = pedido.DataFechamento,
@@ -108,7 +108,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedido,
+            StatusPedido = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             DataFaturamento = pedido.DataFaturamento,
             DataFechamento = pedido.DataFechamento,
@@ -154,7 +154,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedido,
+            StatusPedido = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             DataFaturamento = pedido.DataFaturamento,
             DataFechamento = pedido.DataFechamento,
@@ -200,7 +200,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedido,
+            StatusPedido = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             Produtos = pedido.ItensPedido.Select(ip => new ProdutoDto
             {
@@ -233,7 +233,7 @@ public class PedidoService(
         {
             Id = pedido.Id,
             DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedidoEnum = pedido.StatusPedido,
+            StatusPedido = pedido.StatusPedido,
             DataAbertura = pedido.DataAbertura,
             DataFaturamento = pedido.DataFaturamento,
             DataFechamento = pedido.DataFechamento,

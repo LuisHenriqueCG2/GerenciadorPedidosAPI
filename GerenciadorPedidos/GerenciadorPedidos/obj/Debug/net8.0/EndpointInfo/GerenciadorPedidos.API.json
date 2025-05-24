@@ -38,17 +38,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/PedidoDTO"
+                  "$ref": "#/components/schemas/PedidoDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PedidoDTO"
+                  "$ref": "#/components/schemas/PedidoDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/PedidoDTO"
+                  "$ref": "#/components/schemas/PedidoDto"
                 }
               }
             }
@@ -271,7 +271,7 @@
             "in": "query",
             "description": "Legenda: 1 - Aberto; 2 - Fechado; 3 - Cancelado; 4 - Faturado",
             "schema": {
-              "$ref": "#/components/schemas/StatusPedido"
+              "$ref": "#/components/schemas/StatusPedidoEnum"
             }
           },
           {
@@ -449,7 +449,7 @@
   },
   "components": {
     "schemas": {
-      "PedidoDTO": {
+      "PedidoDto": {
         "required": [
           "descricaoPedido"
         ],
@@ -465,7 +465,7 @@
             "type": "string"
           },
           "statusPedido": {
-            "$ref": "#/components/schemas/StatusPedido"
+            "$ref": "#/components/schemas/StatusPedidoEnum"
           },
           "dataAbertura": {
             "type": "string",
@@ -489,7 +489,7 @@
           "produtos": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ProdutoDTO"
+              "$ref": "#/components/schemas/ProdutoDto"
             },
             "nullable": true
           }
@@ -524,7 +524,7 @@
         },
         "additionalProperties": false
       },
-      "ProdutoDTO": {
+      "ProdutoDto": {
         "type": "object",
         "properties": {
           "id": {
@@ -578,7 +578,7 @@
         },
         "additionalProperties": false
       },
-      "StatusPedido": {
+      "StatusPedidoEnum": {
         "enum": [
           1,
           2,
