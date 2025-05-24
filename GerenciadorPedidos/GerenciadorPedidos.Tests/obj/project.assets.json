@@ -6255,11 +6255,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projeto Gerenciador Pedidos API\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\GerenciadorPedidos.Tests.csproj",
+      "projectUniqueName": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\GerenciadorPedidos.Tests.csproj",
       "projectName": "GerenciadorPedidos.Tests",
-      "projectPath": "D:\\Projeto Gerenciador Pedidos API\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\GerenciadorPedidos.Tests.csproj",
+      "projectPath": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\GerenciadorPedidos.Tests.csproj",
       "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-      "outputPath": "D:\\Projeto Gerenciador Pedidos API\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\obj\\",
+      "outputPath": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6280,8 +6280,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Projeto Gerenciador Pedidos API\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj": {
-              "projectPath": "D:\\Projeto Gerenciador Pedidos API\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj"
+            "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj": {
+              "projectPath": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos\\GerenciadorPedidos.API.csproj"
             }
           }
         }
