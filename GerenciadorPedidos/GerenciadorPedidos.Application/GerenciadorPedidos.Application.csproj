@@ -22,8 +22,4 @@
     <ProjectReference Include="..\GerenciadorPedidos.Domain\GerenciadorPedidos.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Produtos\Validators\" />
-  </ItemGroup>
-
 </Project>

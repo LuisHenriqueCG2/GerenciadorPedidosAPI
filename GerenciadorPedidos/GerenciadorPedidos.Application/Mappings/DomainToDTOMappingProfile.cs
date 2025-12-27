@@ -12,7 +12,7 @@ public class DomainToDtoMappingProfile : Profile
         CreateMap<PedidoDto, Pedido>().ReverseMap();
         CreateMap<Produto, ProdutoDto>().ReverseMap();
         CreateMap<Pedido, PedidoDto>()
-            .ForMember(dest => dest.Produtos, opt => opt.MapFrom(src => src.ItensPedido.Select(ip => ip.Produto)));
+            .ForMember(dest => dest.Itens, opt => opt.MapFrom(src => src.ItensPedido.Select(ip => ip.Produto)));
         CreateMap<Produto, ProdutoDto>();
         CreateMap<ItemPedido, ProdutoDto>()
             .ConstructUsing(ip => new ProdutoDto
@@ -24,6 +24,12 @@ public class DomainToDtoMappingProfile : Profile
                 Quantidade = ip.Quantidade
             });
         CreateMap<Pedido, PedidoDto>()
-            .ForMember(dest => dest.Produtos, opt => opt.MapFrom(src => src.ItensPedido.Select(ip => ip.Produto)));
+            .ForMember(dest => dest.Itens, opt => opt.MapFrom(src => src.ItensPedido.Select(ip => ip.Produto)));
+        
+        CreateMap<Pedido, PedidoDto>();
+        CreateMap<ItemPedido, ItemPedidoDto>()
+            .ForMember(dest => dest.ProdutoDescricao, opt => opt.MapFrom(src => src.Produto.Descricao));
+
+        CreateMap<Pedido, PedidoDto>();
     }
 }

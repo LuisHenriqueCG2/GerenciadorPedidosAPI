@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y+fVnAyaeUk=",
+  "dgSpecHash": "e69R/QI3Jds=",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\Projetos\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\GerenciadorPedidos.Tests.csproj",
+  "projectFilePath": "D:\\GerenciadorPedidosAPI\\GerenciadorPedidos\\GerenciadorPedidos.Tests\\GerenciadorPedidos.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
@@ -108,7 +108,10 @@
     "C:\\Users\\Usuário\\.nuget\\packages\\xunit.core\\2.9.2\\xunit.core.2.9.2.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\xunit.extensibility.core\\2.9.2\\xunit.extensibility.core.2.9.2.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\xunit.extensibility.execution\\2.9.2\\xunit.extensibility.execution.2.9.2.nupkg.sha512",
-    "C:\\Users\\Usuário\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512"
+    "C:\\Users\\Usuário\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512",
+    "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.11\\microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
+    "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.11\\microsoft.windowsdesktop.app.ref.9.0.11.nupkg.sha512",
+    "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.11\\microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512"
   ],
   "logs": []
 }

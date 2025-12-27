@@ -1,4 +1,6 @@
-﻿namespace GerenciadorPedidos.Application.Dtos;
+﻿using GerenciadorPedidos.Domain.Entities;
+
+namespace GerenciadorPedidos.Application.Dtos;
 
 public class ProdutoDto
 {
@@ -7,4 +9,5 @@ public class ProdutoDto
     public DateTime DataCadastro { get; set; }
     public decimal PrecoUnitario { get; set; }
     public int Quantidade { get; set; }
+    
 }

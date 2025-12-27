@@ -16,18 +16,9 @@ public class PedidoService(
 {
     public async Task<PedidoDto> AdicionarPedido(string descricaoPedido)
     {
-        var novoPedido = new Pedido
-        {
-            DescricaoPedido = descricaoPedido,
-            StatusPedido = StatusPedidoEnum.Aberto,
-            DataAbertura = DateTime.Now,
-            DataFechamento = null,
-            DataCancelamento = null,
-            DataFaturamento = null,
-        };
+        var novoPedido = new Pedido(descricaoPedido);
 
         await repository.AdicionarPedido(novoPedido);
-
         return mapper.Map<PedidoDto>(novoPedido);
     }
 
@@ -42,23 +33,7 @@ public class PedidoService(
         pedido.AdicionarProduto(produto, quantidade);
 
         await repository.AlterarPedido(pedidoId, pedido);
-
-        var pedidoDTO = new PedidoDto
-        {
-            Id = pedido.Id,
-            DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedido = pedido.StatusPedido,
-            DataAbertura = pedido.DataAbertura,
-            Produtos = pedido.ItensPedido.Select(ip => new ProdutoDto
-            {
-                Id = ip.Produto.Id,
-                Descricao = ip.Produto.Descricao,
-                PrecoUnitario = ip.Produto.PrecoUnitario,
-                Quantidade = ip.Quantidade
-            }).ToList()
-        };
-
-        return pedidoDTO;
+        return mapper.Map<PedidoDto>(pedido);
     }
 
     public async Task<PedidoDto> CancelarPedido(int pedidoId)
@@ -66,35 +41,10 @@ public class PedidoService(
         var pedido = await repository.ListarPedidoPorID(pedidoId);
         if (pedido == null) throw new NotFoundException("Pedido não encontrado");
 
-        if (pedido.StatusPedido == StatusPedidoEnum.Faturado || pedido.StatusPedido == StatusPedidoEnum.Cancelado)
-        {
-            throw new Exception("Não é possível cancelar um pediudo Faturado ou Cancelado!");
-        }
-
-        pedido.StatusPedido = StatusPedidoEnum.Cancelado;
-        pedido.DataCancelamento = DateTime.Now;
-
+        pedido.CancelarPedido(); // Regra de negócio na entidade
         await repository.CancelarPedido(pedidoId);
 
-        var pedidoDTO = new PedidoDto
-        {
-            Id = pedido.Id,
-            DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedido = pedido.StatusPedido,
-            DataAbertura = pedido.DataAbertura,
-            DataFaturamento = pedido.DataFaturamento,
-            DataFechamento = pedido.DataFechamento,
-            DataCancelamento = pedido.DataCancelamento,
-            Produtos = pedido.ItensPedido.Select(ip => new ProdutoDto
-            {
-                Id = ip.Produto.Id,
-                Descricao = ip.Produto.Descricao,
-                PrecoUnitario = ip.Produto.PrecoUnitario,
-                Quantidade = ip.Quantidade
-            }).ToList()
-        };
-
-        return pedidoDTO;
+        return mapper.Map<PedidoDto>(pedido);
     }
 
     public async Task<PedidoDto> ExcluirPedido(int pedidoId)
@@ -103,26 +53,7 @@ public class PedidoService(
         if (pedido == null) throw new NotFoundException("Pedido não encontrado");
 
         await repository.ExcluirPedido(pedidoId);
-
-        var pedidoDTO = new PedidoDto
-        {
-            Id = pedido.Id,
-            DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedido = pedido.StatusPedido,
-            DataAbertura = pedido.DataAbertura,
-            DataFaturamento = pedido.DataFaturamento,
-            DataFechamento = pedido.DataFechamento,
-            DataCancelamento = pedido.DataCancelamento,
-            Produtos = pedido.ItensPedido.Select(ip => new ProdutoDto
-            {
-                Id = ip.Produto.Id,
-                Descricao = ip.Produto.Descricao,
-                PrecoUnitario = ip.Produto.PrecoUnitario,
-                Quantidade = ip.Quantidade
-            }).ToList()
-        };
-
-        return pedidoDTO;
+        return mapper.Map<PedidoDto>(pedido);
     }
 
     public async Task<PedidoDto> FaturarPedido(int pedidoId)
@@ -159,13 +90,15 @@ public class PedidoService(
             DataFaturamento = pedido.DataFaturamento,
             DataFechamento = pedido.DataFechamento,
             DataCancelamento = pedido.DataCancelamento,
-            Produtos = pedido.ItensPedido.Select(ip => new ProdutoDto
-            {
-                Id = ip.Produto.Id,
-                Descricao = ip.Produto.Descricao,
-                PrecoUnitario = ip.Produto.PrecoUnitario,
-                Quantidade = ip.Quantidade
-            }).ToList()
+            Itens = pedido.ItensPedido
+                .Select(ip => new ItemPedidoDto
+                {
+                    ProdutoId = ip.Produto.Id,
+                    ProdutoDescricao = ip.Produto.Descricao,
+                    Quantidade = ip.Quantidade,
+                    ValorTotal = ip.ValorTotal
+                })
+                .ToList()
         };
 
         return pedidoDTO;
@@ -177,11 +110,9 @@ public class PedidoService(
         return mapper.Map<PedidoDto>(pedido);
     }
 
-    public async Task<IEnumerable<PedidoDto>> ListarTodosAsync(StatusPedidoEnum? StatusPedido, int PageNumber,
-        int PageSize)
+    public async Task<IEnumerable<PedidoDto>> ListarTodosAsync(StatusPedidoEnum? statusPedido, int page, int pageSize)
     {
-        var pedidos = await repository.ListarTodos(StatusPedido, PageNumber, PageSize);
-
+        var pedidos = await repository.ListarTodos(statusPedido, page, pageSize);
         return mapper.Map<IEnumerable<PedidoDto>>(pedidos);
     }
 
@@ -196,22 +127,7 @@ public class PedidoService(
         pedido.RemoverProduto(produto);
         await repository.AlterarPedido(pedidoId, pedido);
 
-        var pedidoDTO = new PedidoDto
-        {
-            Id = pedido.Id,
-            DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedido = pedido.StatusPedido,
-            DataAbertura = pedido.DataAbertura,
-            Produtos = pedido.ItensPedido.Select(ip => new ProdutoDto
-            {
-                Id = ip.Produto.Id,
-                Descricao = ip.Produto.Descricao,
-                PrecoUnitario = ip.Produto.PrecoUnitario,
-                Quantidade = ip.Quantidade
-            }).ToList()
-        };
-
-        return pedidoDTO;
+        return mapper.Map<PedidoDto>(pedido);
     }
 
     public async Task<PedidoDto> FecharPedido(int pedidoId)
@@ -219,34 +135,9 @@ public class PedidoService(
         var pedido = await repository.ListarPedidoPorID(pedidoId);
         if (pedido == null) throw new NotFoundException("Pedido não encontrado");
 
-        if (pedido.StatusPedido != StatusPedidoEnum.Aberto)
-        {
-            throw new Exception("O pedido precisa estar aberto para ser fechado!");
-        }
-
-        pedido.StatusPedido = StatusPedidoEnum.Fechado;
-        pedido.DataFechamento = DateTime.Now;
-
+        pedido.FecharPedido();
         await repository.FecharPedido(pedidoId);
 
-        var pedidoDTO = new PedidoDto
-        {
-            Id = pedido.Id,
-            DescricaoPedido = pedido.DescricaoPedido,
-            StatusPedido = pedido.StatusPedido,
-            DataAbertura = pedido.DataAbertura,
-            DataFaturamento = pedido.DataFaturamento,
-            DataFechamento = pedido.DataFechamento,
-            DataCancelamento = pedido.DataCancelamento,
-            Produtos = pedido.ItensPedido.Select(ip => new ProdutoDto
-            {
-                Id = ip.Produto.Id,
-                Descricao = ip.Produto.Descricao,
-                PrecoUnitario = ip.Produto.PrecoUnitario,
-                Quantidade = ip.Quantidade
-            }).ToList()
-        };
-
-        return pedidoDTO;
+        return mapper.Map<PedidoDto>(pedido);
     }
 }

@@ -134,7 +134,6 @@ public class PedidoRepository(ApplicationDbContext context) : IPedidoRepository
 
         return pedido;
     }
-
     public async Task<IEnumerable<Pedido>> ListarTodos(StatusPedidoEnum? status, int pageNumber, int pageSize)
     {
         pageNumber = pageNumber < 1 ? 1 : pageNumber;

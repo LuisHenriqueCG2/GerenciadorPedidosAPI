@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciadorPedidos.Infra.Ioc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+826ec4cff58ad756665134bdc825d17b13a998cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba47c923e8763dfbcb66c7efb6ab1f5db33b2643")]
 [assembly: System.Reflection.AssemblyProductAttribute("GerenciadorPedidos.Infra.Ioc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GerenciadorPedidos.Infra.Ioc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
